@@ -1,0 +1,3077 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LblFolderTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LblFolderTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="LblFolderTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt, style=Bold</value>
+  </data>
+  <data name="LblFolderTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFolderTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 10</value>
+  </data>
+  <data name="LblFolderTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 37</value>
+  </data>
+  <data name="LblFolderTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="LblFolderTitle.Text" xml:space="preserve">
+    <value>Welcome!</value>
+  </data>
+  <data name="&gt;&gt;LblFolderTitle.Name" xml:space="preserve">
+    <value>LblFolderTitle</value>
+  </data>
+  <data name="&gt;&gt;LblFolderTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFolderTitle.Parent" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;LblFolderTitle.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LblMainDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LblMainDescription.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblMainDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 70</value>
+  </data>
+  <data name="LblMainDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 80</value>
+  </data>
+  <data name="LblMainDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="LblMainDescription.Text" xml:space="preserve">
+    <value>BatchRename lets you easily rename and sort your files. Start now by adding a source folder!</value>
+  </data>
+  <data name="LblMainDescription.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;LblMainDescription.Name" xml:space="preserve">
+    <value>LblMainDescription</value>
+  </data>
+  <data name="&gt;&gt;LblMainDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblMainDescription.Parent" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;LblMainDescription.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="TxbFolderSource.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TxbFolderSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 229</value>
+  </data>
+  <data name="TxbFolderSource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="TxbFolderSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 25</value>
+  </data>
+  <data name="TxbFolderSource.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TxbFolderSource.Name" xml:space="preserve">
+    <value>TxbFolderSource</value>
+  </data>
+  <data name="&gt;&gt;TxbFolderSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxbFolderSource.Parent" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;TxbFolderSource.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ChkFolderSubfolder.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ChkFolderSubfolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ChkFolderSubfolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 263</value>
+  </data>
+  <data name="ChkFolderSubfolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="ChkFolderSubfolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 23</value>
+  </data>
+  <data name="ChkFolderSubfolder.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ChkFolderSubfolder.Text" xml:space="preserve">
+    <value>Include subfolders</value>
+  </data>
+  <data name="&gt;&gt;ChkFolderSubfolder.Name" xml:space="preserve">
+    <value>ChkFolderSubfolder</value>
+  </data>
+  <data name="&gt;&gt;ChkFolderSubfolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChkFolderSubfolder.Parent" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;ChkFolderSubfolder.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BtnFolderSource.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFolderSource.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFolderSource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFolderSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 208</value>
+  </data>
+  <data name="BtnFolderSource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFolderSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnFolderSource.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSource.Name" xml:space="preserve">
+    <value>BtnFolderSource</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSource.Parent" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSource.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BtnFolderSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BtnFolderSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFolderSettings.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFolderSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFolderSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 0</value>
+  </data>
+  <data name="BtnFolderSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFolderSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnFolderSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSettings.Name" xml:space="preserve">
+    <value>BtnFolderSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSettings.Parent" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSettings.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BtnFolderNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="BtnFolderNext.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFolderNext.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFolderNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFolderNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 400</value>
+  </data>
+  <data name="BtnFolderNext.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFolderNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnFolderNext.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderNext.Name" xml:space="preserve">
+    <value>BtnFolderNext</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderNext.Parent" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderNext.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PnlBoxFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PnlBoxFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlBoxFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 475</value>
+  </data>
+  <data name="PnlBoxFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFolder.Name" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFolder.Parent" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFolder.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="GrpSettingsFeedback.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="BtnFeedbackReset.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="BtnFeedbackReset.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFeedbackReset.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFeedbackReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFeedbackReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 20</value>
+  </data>
+  <data name="BtnFeedbackReset.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFeedbackReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="BtnFeedbackReset.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BtnFeedbackReset.Text" xml:space="preserve">
+    <value>Reset Feedback</value>
+  </data>
+  <data name="BtnFeedbackReset.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;BtnFeedbackReset.Name" xml:space="preserve">
+    <value>BtnFeedbackReset</value>
+  </data>
+  <data name="&gt;&gt;BtnFeedbackReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFeedbackReset.Parent" xml:space="preserve">
+    <value>GrpSettingsFeedback</value>
+  </data>
+  <data name="&gt;&gt;BtnFeedbackReset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GrpSettingsFeedback.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 538</value>
+  </data>
+  <data name="GrpSettingsFeedback.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsFeedback.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsFeedback.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 130</value>
+  </data>
+  <data name="GrpSettingsFeedback.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="GrpSettingsFeedback.Text" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsFeedback.Name" xml:space="preserve">
+    <value>GrpSettingsFeedback</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsFeedback.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsFeedback.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsFeedback.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GrpSettingsAbout.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="BtnAboutOpen.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnAboutOpen.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnAboutOpen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnAboutOpen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 20</value>
+  </data>
+  <data name="BtnAboutOpen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnAboutOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="BtnAboutOpen.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BtnAboutOpen.Text" xml:space="preserve">
+    <value>Open About</value>
+  </data>
+  <data name="BtnAboutOpen.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;BtnAboutOpen.Name" xml:space="preserve">
+    <value>BtnAboutOpen</value>
+  </data>
+  <data name="&gt;&gt;BtnAboutOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnAboutOpen.Parent" xml:space="preserve">
+    <value>GrpSettingsAbout</value>
+  </data>
+  <data name="&gt;&gt;BtnAboutOpen.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GrpSettingsAbout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 676</value>
+  </data>
+  <data name="GrpSettingsAbout.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsAbout.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 130</value>
+  </data>
+  <data name="GrpSettingsAbout.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="GrpSettingsAbout.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsAbout.Name" xml:space="preserve">
+    <value>GrpSettingsAbout</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsAbout.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsAbout.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="GrpSettingsHelp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="BtnHelpOpen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        LPm4tO0wygAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BtnHelpOpen.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnHelpOpen.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnHelpOpen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnHelpOpen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 20</value>
+  </data>
+  <data name="BtnHelpOpen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnHelpOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="BtnHelpOpen.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BtnHelpOpen.Text" xml:space="preserve">
+    <value>Open Help</value>
+  </data>
+  <data name="BtnHelpOpen.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;BtnHelpOpen.Name" xml:space="preserve">
+    <value>BtnHelpOpen</value>
+  </data>
+  <data name="&gt;&gt;BtnHelpOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnHelpOpen.Parent" xml:space="preserve">
+    <value>GrpSettingsHelp</value>
+  </data>
+  <data name="&gt;&gt;BtnHelpOpen.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GrpSettingsHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 262</value>
+  </data>
+  <data name="GrpSettingsHelp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsHelp.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 130</value>
+  </data>
+  <data name="GrpSettingsHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="GrpSettingsHelp.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsHelp.Name" xml:space="preserve">
+    <value>GrpSettingsHelp</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsHelp.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsHelp.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="GrpSettingsUpdate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="GrpUpdateSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        TkSuQmCC
+</value>
+  </data>
+  <data name="GrpUpdateSearch.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="GrpUpdateSearch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="GrpUpdateSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="GrpUpdateSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 20</value>
+  </data>
+  <data name="GrpUpdateSearch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpUpdateSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="GrpUpdateSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="GrpUpdateSearch.Text" xml:space="preserve">
+    <value>Search Update</value>
+  </data>
+  <data name="GrpUpdateSearch.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;GrpUpdateSearch.Name" xml:space="preserve">
+    <value>GrpUpdateSearch</value>
+  </data>
+  <data name="&gt;&gt;GrpUpdateSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpUpdateSearch.Parent" xml:space="preserve">
+    <value>GrpSettingsUpdate</value>
+  </data>
+  <data name="&gt;&gt;GrpUpdateSearch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GrpSettingsUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 676</value>
+  </data>
+  <data name="GrpSettingsUpdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsUpdate.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 130</value>
+  </data>
+  <data name="GrpSettingsUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="GrpSettingsUpdate.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsUpdate.Name" xml:space="preserve">
+    <value>GrpSettingsUpdate</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsUpdate.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsUpdate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="GrpSettingsNotifications.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="BtnNotificationsSwitch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAABGdBTUEAALGPC/xhBQAAAa5JREFUeF7t
+        3LFNw0AAheE0lOnpaCmZhR2YgYIRmIIRWIUxYAQKOEOMopAoif2S3NnfJz3ZV/uXO3sBAAAAAAAAAAAA
+        AAAAAAAAZ7NcDWKuy17LXsrERUQf1ddq4mK0zai6fZbdl8Egu6J6LINBREWcqIgTFXGiIk5UxImKOFER
+        JyriREWcqIgTFXGiIk5UxImKOFERJyriREWcqIgTFXGiIk5UxImKOFERJyriREWcqIgTFXGiIk5UxImK
+        OFFV4qrs9ve2eaKqRBfVc9l7Wet/nBNVJfqo+ofwUdZqXKKqyE3ZW9n6w2gxLlFV6K6s5bhEVbFW4xJV
+        A1qLS1QNaSUuUTWo9rhE1bBa4xLVBNQWl6gmpJa4RDVBl45LVBN2qbhENQPnjktUM3KuuEQ1Q6eOS1Qz
+        dqq4REU8LlHxJxWXqPhnbFyiYqehcYmKvY6NS1Qc7NC4RMXR9sUlKgbbFlf33eJDmagYZVtcXUSbZ1Fx
+        tG1xiYqIXW8uUTHaelyiIqqP6+nnBEHL1RUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJis
+        xeIbU+DSMOm509oAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BtnNotificationsSwitch.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnNotificationsSwitch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnNotificationsSwitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnNotificationsSwitch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 20</value>
+  </data>
+  <data name="BtnNotificationsSwitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnNotificationsSwitch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="BtnNotificationsSwitch.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BtnNotificationsSwitch.Text" xml:space="preserve">
+    <value>Disable Notifications</value>
+  </data>
+  <data name="BtnNotificationsSwitch.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;BtnNotificationsSwitch.Name" xml:space="preserve">
+    <value>BtnNotificationsSwitch</value>
+  </data>
+  <data name="&gt;&gt;BtnNotificationsSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnNotificationsSwitch.Parent" xml:space="preserve">
+    <value>GrpSettingsNotifications</value>
+  </data>
+  <data name="&gt;&gt;BtnNotificationsSwitch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GrpSettingsNotifications.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 538</value>
+  </data>
+  <data name="GrpSettingsNotifications.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsNotifications.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsNotifications.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 130</value>
+  </data>
+  <data name="GrpSettingsNotifications.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="GrpSettingsNotifications.Text" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsNotifications.Name" xml:space="preserve">
+    <value>GrpSettingsNotifications</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsNotifications.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsNotifications.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsNotifications.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="BtnSplashscreenSwitch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAABGdBTUEAALGPC/xhBQAAAa5JREFUeF7t
+        3LFNw0AAheE0lOnpaCmZhR2YgYIRmIIRWIUxYAQKOEOMopAoif2S3NnfJz3ZV/uXO3sBAAAAAAAAAAAA
+        AAAAAAAAZ7NcDWKuy17LXsrERUQf1ddq4mK0zai6fZbdl8Egu6J6LINBREWcqIgTFXGiIk5UxImKOFER
+        JyriREWcqIgTFXGiIk5UxImKOFERJyriREWcqIgTFXGiIk5UxImKOFERJyriREWcqIgTFXGiIk5UxImK
+        OFFV4qrs9ve2eaKqRBfVc9l7Wet/nBNVJfqo+ofwUdZqXKKqyE3ZW9n6w2gxLlFV6K6s5bhEVbFW4xJV
+        A1qLS1QNaSUuUTWo9rhE1bBa4xLVBNQWl6gmpJa4RDVBl45LVBN2qbhENQPnjktUM3KuuEQ1Q6eOS1Qz
+        dqq4REU8LlHxJxWXqPhnbFyiYqehcYmKvY6NS1Qc7NC4RMXR9sUlKgbbFlf33eJDmagYZVtcXUSbZ1Fx
+        tG1xiYqIXW8uUTHaelyiIqqP6+nnBEHL1RUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJis
+        xeIbU+DSMOm509oAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BtnSplashscreenSwitch.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnSplashscreenSwitch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnSplashscreenSwitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnSplashscreenSwitch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 20</value>
+  </data>
+  <data name="BtnSplashscreenSwitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnSplashscreenSwitch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="BtnSplashscreenSwitch.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BtnSplashscreenSwitch.Text" xml:space="preserve">
+    <value>Disable Splashscreen</value>
+  </data>
+  <data name="BtnSplashscreenSwitch.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;BtnSplashscreenSwitch.Name" xml:space="preserve">
+    <value>BtnSplashscreenSwitch</value>
+  </data>
+  <data name="&gt;&gt;BtnSplashscreenSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSplashscreenSwitch.Parent" xml:space="preserve">
+    <value>GrpSettingsSplashscreen</value>
+  </data>
+  <data name="&gt;&gt;BtnSplashscreenSwitch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 262</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 130</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.Text" xml:space="preserve">
+    <value>Splashscreen</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsSplashscreen.Name" xml:space="preserve">
+    <value>GrpSettingsSplashscreen</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsSplashscreen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsSplashscreen.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsSplashscreen.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="GrpSettingsLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="BtnLogDelete.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAABGdBTUEAALGPC/xhBQAABOJJREFUeF7t
+        3bGLHWUUhvEtBCFFCBhS2limSm1hYWMhpLfKX2GVLoV/gAQEC63TWoullY2dZSAIgpVgnZyX3UO+ncyc
+        mXvuzN2Z7zw/eCHZQNg7++zd2bt771wBAAAAAAAg8rHtoe2TYtNtvm/DBj6z/WL7p+D+tX1vw8oU1e+2
+        t4X3sw0rIqrrEdaKntj+sA0P8l+2X22/dbzhJxNhreQrmwJqD67vma13uqfWuZXfZsJagaJ6Y/ODqsD+
+        a/5eIaxPbe1tJqwzDaP60/aFrb33Iiyc5Btbe/evqHSepcevXt+8TSMsLKao2gPpUYkeHCQsnEyh/G/z
+        g9hGJYRFWCf71hZFJYRFWCd5bvMDp41FJYRFWIt8ZFsalRAWYc3Sd3j6gaofMC2KSgiLsEKZqISwCGvS
+        A9tLmx8obUlUQliENeqRTb9L5QdJ0w+XH9uW0D0dj7zjlrGotFc2PdSgk/i5vbC1B5mwitNP6PXrLX5w
+        1hphFTc8p1prhFXcT7Y2CJ0nRdN519x0wv/U1jvCCrRh6VdhdLB0Ij61JfTgagWEFWjD0rNNdCKPZQgr
+        QFh5hBUgrDzCChBWHmEFCCuPsAKElUdYAcLKI6wAYeURVoCw8ggrQFh5hBUgrDzCChBWHmEFCCuPsAKE
+        lUdYAcLKI6wAYeURVoCw8ggrQFh5hBUgrDzCChBWHmEFCCuPsAKElUdYAcLKI6wAYeURVoCw8ggrQFh5
+        hBUgrDzCChBWHmEFCCuPsAKElUdYAcLKI6xAj2Hpsnd67dSlr+eVtUZYeh/1+q26LF9XegtLUf1t0+35
+        zrbli8CdG5ai8tfU10uZdxVXT2F9adNt8NujbRnXOWG1Ufn0ioqf27rQW1jtRTp9W8U1DEtf0pYYi0rT
+        PS1h7dTXtuG9lrZFXG1YP9ju2eZMRaUvhfrE6EaPJ++Xikth6TqORDWix7DkEnHp4gv6/4hqRK9hydZx
+        6f8gqgk9hyWXPOcaUzIq6T0suau4ykYlFcKSS8dVOiqpEpZcKq7yUUmlsGTruIjqRrWwZKu4iKpRMSxZ
+        Oy6iGqgalqwVF1GNqByWnBsXUU2oHpZk4yKqAGFdOzUuoppBWO8tjYuoFiCs26K4RIER1QKE9aEorpeD
+        t2lENYKwxk3FNRxRTSCsaXNxEVWAsGJPbe0TJnx6m55qhgmENW3quz+fnpWz5EHUkghr3FxUvrkHUcsi
+        rA9NRaXjc8nnLR4aYd0WPfipp8DrvErHafjvxDVAWO8tfUR96SP0pRHWtaVROeKaQVinR+WIK1A9rGxU
+        jrgmVA7r3KgccY2oGtZaUTniGqgY1tpROeJqVAtrq6gccd2oFNbWUTniMlXCulRUrnxcFcK6dFSudFy9
+        h3VXUbmycfUc1l1H5UrG1WtYe4nKlYurx7D2FpUrFVdvYe01Klcmrp7C0isY7zkqF8WlT4wu9BTWM1v7
+        gdL2FpWbikvPCupCT2E9sOlCSX579hqVG8alK1zct3WhDUsXCXpoOzJ9YF7ZdCWtPUflPK4fbUsuRnAY
+        bVi6Low+KHuenss391mte67H1388hCe2rqKSNqyjTO9zdx+I3hwxLI24dk7fnut1CPREzCNN73PXPxI5
+        Op2v6DvBow4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYt6urdyk9PRZmqgrXAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="BtnLogDelete.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnLogDelete.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnLogDelete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnLogDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 20</value>
+  </data>
+  <data name="BtnLogDelete.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnLogDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="BtnLogDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="BtnLogDelete.Text" xml:space="preserve">
+    <value>Delete Log</value>
+  </data>
+  <data name="BtnLogDelete.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;BtnLogDelete.Name" xml:space="preserve">
+    <value>BtnLogDelete</value>
+  </data>
+  <data name="&gt;&gt;BtnLogDelete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnLogDelete.Parent" xml:space="preserve">
+    <value>GrpSettingsLog</value>
+  </data>
+  <data name="&gt;&gt;BtnLogDelete.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BtnLogShow.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BtnLogShow.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnLogShow.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnLogShow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnLogShow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 20</value>
+  </data>
+  <data name="BtnLogShow.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnLogShow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="BtnLogShow.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BtnLogShow.Text" xml:space="preserve">
+    <value>Show Log</value>
+  </data>
+  <data name="BtnLogShow.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;BtnLogShow.Name" xml:space="preserve">
+    <value>BtnLogShow</value>
+  </data>
+  <data name="&gt;&gt;BtnLogShow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnLogShow.Parent" xml:space="preserve">
+    <value>GrpSettingsLog</value>
+  </data>
+  <data name="&gt;&gt;BtnLogShow.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GrpSettingsLog.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GrpSettingsLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 400</value>
+  </data>
+  <data name="GrpSettingsLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsLog.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 3690</value>
+  </data>
+  <data name="GrpSettingsLog.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="GrpSettingsLog.Text" xml:space="preserve">
+    <value>Log (0 kb)</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsLog.Name" xml:space="preserve">
+    <value>GrpSettingsLog</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsLog.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsLog.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="LblSettingsTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LblSettingsTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblSettingsTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt, style=Bold</value>
+  </data>
+  <data name="LblSettingsTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblSettingsTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 10</value>
+  </data>
+  <data name="LblSettingsTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 37</value>
+  </data>
+  <data name="LblSettingsTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LblSettingsTitle.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;LblSettingsTitle.Name" xml:space="preserve">
+    <value>LblSettingsTitle</value>
+  </data>
+  <data name="&gt;&gt;LblSettingsTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblSettingsTitle.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;LblSettingsTitle.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LblSettingsDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LblSettingsDescription.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblSettingsDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 70</value>
+  </data>
+  <data name="LblSettingsDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 80</value>
+  </data>
+  <data name="LblSettingsDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="LblSettingsDescription.Text" xml:space="preserve">
+    <value>Here you can find the settings.</value>
+  </data>
+  <data name="LblSettingsDescription.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;LblSettingsDescription.Name" xml:space="preserve">
+    <value>LblSettingsDescription</value>
+  </data>
+  <data name="&gt;&gt;LblSettingsDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblSettingsDescription.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;LblSettingsDescription.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="BtnSortingGoHaltSwitch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAYAAACO98lFAAAABGdBTUEAALGPC/xhBQAAAM9JREFUeF7t
+        2LENwkAUBNGLKYSEDoiQCAhIoRMSqIAu3BYBGVRAA7B7LC3YWH+etBIXGY2MJdwAAAAAAMCcLLX192Nd
+        W+2mXfqpsJ121879VBghghBBiCBEECIIEYQIQgQhghBBiCBE/P59ThZioW0mnt9BXLWXdtJG5xchvvj7
+        T+bvstJG5TvhoB0nmq+91wbNEcq+kPEzwQ9H/yRK8l3w0AjQTwURQCOARoB+KogAGgE0AvRTQQTQCKCV
+        DvDUygYwvyFyCAAAAAAAMBetfQBfoG3ns+WemAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="BtnSortingGoHaltSwitch.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnSortingGoHaltSwitch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnSortingGoHaltSwitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnSortingGoHaltSwitch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 1826</value>
+  </data>
+  <data name="BtnSortingGoHaltSwitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnSortingGoHaltSwitch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnSortingGoHaltSwitch.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingGoHaltSwitch.Name" xml:space="preserve">
+    <value>BtnSortingGoHaltSwitch</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingGoHaltSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingGoHaltSwitch.Parent" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingGoHaltSwitch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PnlBoxSettings.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PnlSettingsSpacer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 821</value>
+  </data>
+  <data name="PnlSettingsSpacer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlSettingsSpacer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>380, 10</value>
+  </data>
+  <data name="PnlSettingsSpacer.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsSpacer.Name" xml:space="preserve">
+    <value>PnlSettingsSpacer</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsSpacer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsSpacer.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsSpacer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BtnSettingsBack.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnSettingsBack.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnSettingsBack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnSettingsBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="BtnSettingsBack.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnSettingsBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnSettingsBack.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsBack.Name" xml:space="preserve">
+    <value>BtnSettingsBack</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsBack.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsBack.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BtnSettingsReset.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="BtnSettingsReset.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="BtnSettingsReset.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnSettingsReset.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnSettingsReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnSettingsReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 154</value>
+  </data>
+  <data name="BtnSettingsReset.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnSettingsReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="BtnSettingsReset.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="BtnSettingsReset.Text" xml:space="preserve">
+    <value>Reset Settings</value>
+  </data>
+  <data name="BtnSettingsReset.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsReset.Name" xml:space="preserve">
+    <value>BtnSettingsReset</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsReset.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsReset.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="PnlBoxSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="PnlBoxSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlBoxSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 475</value>
+  </data>
+  <data name="PnlBoxSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSettings.Name" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSettings.Parent" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ChkFormatSwitch.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ChkFormatSwitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ChkFormatSwitch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 167</value>
+  </data>
+  <data name="ChkFormatSwitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="ChkFormatSwitch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 23</value>
+  </data>
+  <data name="ChkFormatSwitch.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ChkFormatSwitch.Text" xml:space="preserve">
+    <value>Enable Renaming</value>
+  </data>
+  <data name="&gt;&gt;ChkFormatSwitch.Name" xml:space="preserve">
+    <value>ChkFormatSwitch</value>
+  </data>
+  <data name="&gt;&gt;ChkFormatSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChkFormatSwitch.Parent" xml:space="preserve">
+    <value>PnlBoxFormat</value>
+  </data>
+  <data name="&gt;&gt;ChkFormatSwitch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LblFormatExamples.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LblFormatExamples.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblFormatExamples.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="LblFormatExamples.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFormatExamples.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 243</value>
+  </data>
+  <data name="LblFormatExamples.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 21</value>
+  </data>
+  <data name="LblFormatExamples.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="LblFormatExamples.Text" xml:space="preserve">
+    <value>Examples</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExamples.Name" xml:space="preserve">
+    <value>LblFormatExamples</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExamples.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExamples.Parent" xml:space="preserve">
+    <value>PnlBoxFormat</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExamples.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BtnFormatPrevious.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="BtnFormatPrevious.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFormatPrevious.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFormatPrevious.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFormatPrevious.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="BtnFormatPrevious.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFormatPrevious.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnFormatPrevious.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatPrevious.Name" xml:space="preserve">
+    <value>BtnFormatPrevious</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatPrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatPrevious.Parent" xml:space="preserve">
+    <value>PnlBoxFormat</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatPrevious.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LblFormatExample2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LblFormatExample2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFormatExample2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 313</value>
+  </data>
+  <data name="LblFormatExample2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 26</value>
+  </data>
+  <data name="LblFormatExample2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="LblFormatExample2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExample2.Name" xml:space="preserve">
+    <value>LblFormatExample2</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExample2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExample2.Parent" xml:space="preserve">
+    <value>PnlBoxFormat</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExample2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LblFormatExample1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFormatExample1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 279</value>
+  </data>
+  <data name="LblFormatExample1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 26</value>
+  </data>
+  <data name="LblFormatExample1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="LblFormatExample1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExample1.Name" xml:space="preserve">
+    <value>LblFormatExample1</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExample1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExample1.Parent" xml:space="preserve">
+    <value>PnlBoxFormat</value>
+  </data>
+  <data name="&gt;&gt;LblFormatExample1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BtnFormatSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BtnFormatSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFormatSettings.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFormatSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFormatSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 0</value>
+  </data>
+  <data name="BtnFormatSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFormatSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnFormatSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatSettings.Name" xml:space="preserve">
+    <value>BtnFormatSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatSettings.Parent" xml:space="preserve">
+    <value>PnlBoxFormat</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatSettings.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="TxbFormatPattern.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TxbFormatPattern.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 203</value>
+  </data>
+  <data name="TxbFormatPattern.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="TxbFormatPattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 25</value>
+  </data>
+  <data name="TxbFormatPattern.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="TxbFormatPattern.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;TxbFormatPattern.Name" xml:space="preserve">
+    <value>TxbFormatPattern</value>
+  </data>
+  <data name="&gt;&gt;TxbFormatPattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxbFormatPattern.Parent" xml:space="preserve">
+    <value>PnlBoxFormat</value>
+  </data>
+  <data name="&gt;&gt;TxbFormatPattern.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="LblFormatTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LblFormatTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblFormatTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt, style=Bold</value>
+  </data>
+  <data name="LblFormatTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFormatTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 10</value>
+  </data>
+  <data name="LblFormatTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 37</value>
+  </data>
+  <data name="LblFormatTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LblFormatTitle.Text" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="&gt;&gt;LblFormatTitle.Name" xml:space="preserve">
+    <value>LblFormatTitle</value>
+  </data>
+  <data name="&gt;&gt;LblFormatTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFormatTitle.Parent" xml:space="preserve">
+    <value>PnlBoxFormat</value>
+  </data>
+  <data name="&gt;&gt;LblFormatTitle.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="BtnFormatNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="BtnFormatNext.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFormatNext.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFormatNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFormatNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 400</value>
+  </data>
+  <data name="BtnFormatNext.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFormatNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnFormatNext.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatNext.Name" xml:space="preserve">
+    <value>BtnFormatNext</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatNext.Parent" xml:space="preserve">
+    <value>PnlBoxFormat</value>
+  </data>
+  <data name="&gt;&gt;BtnFormatNext.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="LblFormatDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LblFormatDescription.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFormatDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 70</value>
+  </data>
+  <data name="LblFormatDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 80</value>
+  </data>
+  <data name="LblFormatDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="LblFormatDescription.Text" xml:space="preserve">
+    <value>Set the way your files will be renamed!</value>
+  </data>
+  <data name="LblFormatDescription.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;LblFormatDescription.Name" xml:space="preserve">
+    <value>LblFormatDescription</value>
+  </data>
+  <data name="&gt;&gt;LblFormatDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFormatDescription.Parent" xml:space="preserve">
+    <value>PnlBoxFormat</value>
+  </data>
+  <data name="&gt;&gt;LblFormatDescription.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="PnlBoxFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 475</value>
+  </data>
+  <data name="PnlBoxFormat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlBoxFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 475</value>
+  </data>
+  <data name="PnlBoxFormat.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFormat.Name" xml:space="preserve">
+    <value>PnlBoxFormat</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFormat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFormat.Parent" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFormat.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LblFoldersMusic.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblFoldersMusic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFoldersMusic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 71</value>
+  </data>
+  <data name="LblFoldersMusic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 19</value>
+  </data>
+  <data name="LblFoldersMusic.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="LblFoldersMusic.Text" xml:space="preserve">
+    <value>Music</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersMusic.Name" xml:space="preserve">
+    <value>LblFoldersMusic</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersMusic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersMusic.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersMusic.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LblFoldersVideos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblFoldersVideos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFoldersVideos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 71</value>
+  </data>
+  <data name="LblFoldersVideos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 19</value>
+  </data>
+  <data name="LblFoldersVideos.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="LblFoldersVideos.Text" xml:space="preserve">
+    <value>Videos</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersVideos.Name" xml:space="preserve">
+    <value>LblFoldersVideos</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersVideos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersVideos.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersVideos.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LblFoldersDocuments.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblFoldersDocuments.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFoldersDocuments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 30</value>
+  </data>
+  <data name="LblFoldersDocuments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 19</value>
+  </data>
+  <data name="LblFoldersDocuments.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="LblFoldersDocuments.Text" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersDocuments.Name" xml:space="preserve">
+    <value>LblFoldersDocuments</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersDocuments.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersDocuments.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersDocuments.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LblFoldersImages.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblFoldersImages.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFoldersImages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 30</value>
+  </data>
+  <data name="LblFoldersImages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 19</value>
+  </data>
+  <data name="LblFoldersImages.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LblFoldersImages.Text" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersImages.Name" xml:space="preserve">
+    <value>LblFoldersImages</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersImages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersImages.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersImages.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="BtnFoldersVideos.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFoldersVideos.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFoldersVideos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFoldersVideos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 65</value>
+  </data>
+  <data name="BtnFoldersVideos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFoldersVideos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 33</value>
+  </data>
+  <data name="BtnFoldersVideos.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersVideos.Name" xml:space="preserve">
+    <value>BtnFoldersVideos</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersVideos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersVideos.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersVideos.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BtnFoldersImages.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFoldersImages.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFoldersImages.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFoldersImages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 25</value>
+  </data>
+  <data name="BtnFoldersImages.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFoldersImages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 33</value>
+  </data>
+  <data name="BtnFoldersImages.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersImages.Name" xml:space="preserve">
+    <value>BtnFoldersImages</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersImages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersImages.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersImages.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="BtnFoldersMusic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFoldersMusic.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFoldersMusic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFoldersMusic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 65</value>
+  </data>
+  <data name="BtnFoldersMusic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFoldersMusic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 33</value>
+  </data>
+  <data name="BtnFoldersMusic.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersMusic.Name" xml:space="preserve">
+    <value>BtnFoldersMusic</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersMusic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersMusic.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersMusic.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="BtnFoldersDocuments.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFoldersDocuments.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFoldersDocuments.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFoldersDocuments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 25</value>
+  </data>
+  <data name="BtnFoldersDocuments.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFoldersDocuments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 33</value>
+  </data>
+  <data name="BtnFoldersDocuments.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersDocuments.Name" xml:space="preserve">
+    <value>BtnFoldersDocuments</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersDocuments.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersDocuments.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersDocuments.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="GrpSortingFolders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 185</value>
+  </data>
+  <data name="GrpSortingFolders.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSortingFolders.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSortingFolders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 112</value>
+  </data>
+  <data name="GrpSortingFolders.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="GrpSortingFolders.Text" xml:space="preserve">
+    <value>Folders</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.Name" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RbSourceCopy.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RbSourceCopy.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RbSourceCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 56</value>
+  </data>
+  <data name="RbSourceCopy.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="RbSourceCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 23</value>
+  </data>
+  <data name="RbSourceCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="RbSourceCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="&gt;&gt;RbSourceCopy.Name" xml:space="preserve">
+    <value>RbSourceCopy</value>
+  </data>
+  <data name="&gt;&gt;RbSourceCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RbSourceCopy.Parent" xml:space="preserve">
+    <value>GrpSortingSource</value>
+  </data>
+  <data name="&gt;&gt;RbSourceCopy.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RbSourceMove.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RbSourceMove.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RbSourceMove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="RbSourceMove.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="RbSourceMove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 23</value>
+  </data>
+  <data name="RbSourceMove.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RbSourceMove.Text" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="&gt;&gt;RbSourceMove.Name" xml:space="preserve">
+    <value>RbSourceMove</value>
+  </data>
+  <data name="&gt;&gt;RbSourceMove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RbSourceMove.Parent" xml:space="preserve">
+    <value>GrpSortingSource</value>
+  </data>
+  <data name="&gt;&gt;RbSourceMove.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GrpSortingSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 305</value>
+  </data>
+  <data name="GrpSortingSource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSortingSource.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSortingSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 90</value>
+  </data>
+  <data name="GrpSortingSource.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="GrpSortingSource.Text" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingSource.Name" xml:space="preserve">
+    <value>GrpSortingSource</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingSource.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingSource.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RbTargetDuplicate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RbTargetDuplicate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RbTargetDuplicate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 56</value>
+  </data>
+  <data name="RbTargetDuplicate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="RbTargetDuplicate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 23</value>
+  </data>
+  <data name="RbTargetDuplicate.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="RbTargetDuplicate.Text" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="&gt;&gt;RbTargetDuplicate.Name" xml:space="preserve">
+    <value>RbTargetDuplicate</value>
+  </data>
+  <data name="&gt;&gt;RbTargetDuplicate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RbTargetDuplicate.Parent" xml:space="preserve">
+    <value>GrpSortingTarget</value>
+  </data>
+  <data name="&gt;&gt;RbTargetDuplicate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RbTargetOverwrite.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RbTargetOverwrite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RbTargetOverwrite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="RbTargetOverwrite.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="RbTargetOverwrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 23</value>
+  </data>
+  <data name="RbTargetOverwrite.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RbTargetOverwrite.Text" xml:space="preserve">
+    <value>Overwrite</value>
+  </data>
+  <data name="&gt;&gt;RbTargetOverwrite.Name" xml:space="preserve">
+    <value>RbTargetOverwrite</value>
+  </data>
+  <data name="&gt;&gt;RbTargetOverwrite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RbTargetOverwrite.Parent" xml:space="preserve">
+    <value>GrpSortingTarget</value>
+  </data>
+  <data name="&gt;&gt;RbTargetOverwrite.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GrpSortingTarget.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 305</value>
+  </data>
+  <data name="GrpSortingTarget.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSortingTarget.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSortingTarget.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 90</value>
+  </data>
+  <data name="GrpSortingTarget.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="GrpSortingTarget.Text" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingTarget.Name" xml:space="preserve">
+    <value>GrpSortingTarget</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingTarget.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingTarget.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingTarget.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BtnSortingPrevious.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="BtnSortingPrevious.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnSortingPrevious.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnSortingPrevious.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnSortingPrevious.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="BtnSortingPrevious.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnSortingPrevious.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnSortingPrevious.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingPrevious.Name" xml:space="preserve">
+    <value>BtnSortingPrevious</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingPrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingPrevious.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingPrevious.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ChkSortingSwitch.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ChkSortingSwitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ChkSortingSwitch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 154</value>
+  </data>
+  <data name="ChkSortingSwitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="ChkSortingSwitch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 23</value>
+  </data>
+  <data name="ChkSortingSwitch.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ChkSortingSwitch.Text" xml:space="preserve">
+    <value>Enable sorting</value>
+  </data>
+  <data name="&gt;&gt;ChkSortingSwitch.Name" xml:space="preserve">
+    <value>ChkSortingSwitch</value>
+  </data>
+  <data name="&gt;&gt;ChkSortingSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChkSortingSwitch.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;ChkSortingSwitch.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BtnSortingSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BtnSortingSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnSortingSettings.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnSortingSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnSortingSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 0</value>
+  </data>
+  <data name="BtnSortingSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnSortingSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnSortingSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingSettings.Name" xml:space="preserve">
+    <value>BtnSortingSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingSettings.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingSettings.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="LblSortingTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LblSortingTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblSortingTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt, style=Bold</value>
+  </data>
+  <data name="LblSortingTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblSortingTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 10</value>
+  </data>
+  <data name="LblSortingTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 37</value>
+  </data>
+  <data name="LblSortingTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LblSortingTitle.Text" xml:space="preserve">
+    <value>Sorting</value>
+  </data>
+  <data name="&gt;&gt;LblSortingTitle.Name" xml:space="preserve">
+    <value>LblSortingTitle</value>
+  </data>
+  <data name="&gt;&gt;LblSortingTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblSortingTitle.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;LblSortingTitle.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="LblSortingDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LblSortingDescription.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblSortingDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 70</value>
+  </data>
+  <data name="LblSortingDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 80</value>
+  </data>
+  <data name="LblSortingDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="LblSortingDescription.Text" xml:space="preserve">
+    <value>Set the way your files will be renamed!</value>
+  </data>
+  <data name="LblSortingDescription.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;LblSortingDescription.Name" xml:space="preserve">
+    <value>LblSortingDescription</value>
+  </data>
+  <data name="&gt;&gt;LblSortingDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblSortingDescription.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;LblSortingDescription.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="PnlBoxSorting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1425</value>
+  </data>
+  <data name="PnlBoxSorting.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlBoxSorting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 475</value>
+  </data>
+  <data name="PnlBoxSorting.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSorting.Name" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSorting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSorting.Parent" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSorting.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BtnFiletypeSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BtnFiletypeSelect.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="BtnFiletypeSelect.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFiletypeSelect.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFiletypeSelect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFiletypeSelect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>125, 171</value>
+  </data>
+  <data name="BtnFiletypeSelect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFiletypeSelect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="BtnFiletypeSelect.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="BtnFiletypeSelect.Text" xml:space="preserve">
+    <value>Select filetypes</value>
+  </data>
+  <data name="BtnFiletypeSelect.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSelect.Name" xml:space="preserve">
+    <value>BtnFiletypeSelect</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSelect.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSelect.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ChkFiletypeEXIF.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ChkFiletypeEXIF.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ChkFiletypeEXIF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 304</value>
+  </data>
+  <data name="ChkFiletypeEXIF.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="ChkFiletypeEXIF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 23</value>
+  </data>
+  <data name="ChkFiletypeEXIF.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ChkFiletypeEXIF.Text" xml:space="preserve">
+    <value>Use EXIF data</value>
+  </data>
+  <data name="&gt;&gt;ChkFiletypeEXIF.Name" xml:space="preserve">
+    <value>ChkFiletypeEXIF</value>
+  </data>
+  <data name="&gt;&gt;ChkFiletypeEXIF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChkFiletypeEXIF.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;ChkFiletypeEXIF.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BtnFiletypePrevious.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="BtnFiletypePrevious.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFiletypePrevious.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFiletypePrevious.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFiletypePrevious.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="BtnFiletypePrevious.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFiletypePrevious.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnFiletypePrevious.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypePrevious.Name" xml:space="preserve">
+    <value>BtnFiletypePrevious</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypePrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypePrevious.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypePrevious.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BtnFiletypeSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="BtnFiletypeSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFiletypeSettings.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFiletypeSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFiletypeSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 0</value>
+  </data>
+  <data name="BtnFiletypeSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFiletypeSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnFiletypeSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSettings.Name" xml:space="preserve">
+    <value>BtnFiletypeSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSettings.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSettings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="LblFiletypeTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LblFiletypeTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblFiletypeTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20.25pt, style=Bold</value>
+  </data>
+  <data name="LblFiletypeTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFiletypeTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 10</value>
+  </data>
+  <data name="LblFiletypeTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 37</value>
+  </data>
+  <data name="LblFiletypeTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LblFiletypeTitle.Text" xml:space="preserve">
+    <value>File Type</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeTitle.Name" xml:space="preserve">
+    <value>LblFiletypeTitle</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeTitle.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeTitle.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BtnFiletypeNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="BtnFiletypeNext.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnFiletypeNext.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnFiletypeNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnFiletypeNext.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 400</value>
+  </data>
+  <data name="BtnFiletypeNext.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnFiletypeNext.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 65</value>
+  </data>
+  <data name="BtnFiletypeNext.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeNext.Name" xml:space="preserve">
+    <value>BtnFiletypeNext</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeNext.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeNext.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="LblFiletypeDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="LblFiletypeDescription.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblFiletypeDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 70</value>
+  </data>
+  <data name="LblFiletypeDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 80</value>
+  </data>
+  <data name="LblFiletypeDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="LblFiletypeDescription.Text" xml:space="preserve">
+    <value>Choose the file types that should be included and whether to use EXIF data!</value>
+  </data>
+  <data name="LblFiletypeDescription.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeDescription.Name" xml:space="preserve">
+    <value>LblFiletypeDescription</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeDescription.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeDescription.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PnlBoxFiletype.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 950</value>
+  </data>
+  <data name="PnlBoxFiletype.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlBoxFiletype.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 475</value>
+  </data>
+  <data name="PnlBoxFiletype.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFiletype.Name" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFiletype.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFiletype.Parent" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFiletype.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PnlMainBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PnlMainBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlMainBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 2000</value>
+  </data>
+  <data name="PnlMainBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PnlMainBox.Name" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlMainBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlMainBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PnlMainBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PgbMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="PgbMain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PgbMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PgbMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PgbMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 33</value>
+  </data>
+  <data name="PgbMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PgbMain.Name" xml:space="preserve">
+    <value>PgbMain</value>
+  </data>
+  <data name="&gt;&gt;PgbMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PgbMain.Parent" xml:space="preserve">
+    <value>PnlProgress</value>
+  </data>
+  <data name="&gt;&gt;PgbMain.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LblMainTask.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblMainTask.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblMainTask.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="LblMainTask.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 17</value>
+  </data>
+  <data name="LblMainTask.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="LblMainTask.Text" xml:space="preserve">
+    <value>Waiting ...</value>
+  </data>
+  <data name="&gt;&gt;LblMainTask.Name" xml:space="preserve">
+    <value>LblMainTask</value>
+  </data>
+  <data name="&gt;&gt;LblMainTask.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblMainTask.Parent" xml:space="preserve">
+    <value>PnlProgress</value>
+  </data>
+  <data name="&gt;&gt;LblMainTask.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PnlProgress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="PnlProgress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
+  <data name="PnlProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 475</value>
+  </data>
+  <data name="PnlProgress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlProgress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 33</value>
+  </data>
+  <data name="PnlProgress.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;PnlProgress.Name" xml:space="preserve">
+    <value>PnlProgress</value>
+  </data>
+  <data name="&gt;&gt;PnlProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlProgress.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PnlProgress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 508</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD/sAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA//8AAPipBin/rQT//q0E/PSnBzkAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        BP/8qwVHAAAAAAAAAAAAAAAA/qwESf+tBP//rQT//60E//ysBYIAAAAA+6oFQf+tBP//rQT//60E//+t
+        BP/4qQU/AAAAAAAAAAAAAAAAAAAAAPqqBlX/rQT//60E//+tBP/sogkRAAAAAAAAAAAAAAAAAAAAAPys
+        BXv/rQT//60E//2sBYIAAAAAAAAAAAAAAAAAAAAA+6oGMf6tBP//rQT//60E//urBXcAAAAA/KsEqv+t
+        BP//rQT//60E//6tBPX9rASu+6sFg/2sBaX+rAT2/60E//+tBP//rQT//60E/+qhCxkAAAAAAAAAAAAA
+        AAAAAAAA/60E9/+tBP//rQT//awFvgAAAAAAAAAAAAAAAAAAAAD/swEA+qoGFP+tBPT/rQT//60E//uq
+        BjwAAAAA/KwEm/+tBP//rQT//60E//+tBP//rQT//60E//+tBP//rQT//60E//+tBP/9rAXXAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD+rATa/60E/v+tBP//rQT//awF0f2sBIb+rQVd9KcHSP+tBFz7qgVf/awFtP+t
+        BP//rQT//qwE9gAAAAAAAAAA+KkHKP2sBKD+rAX0/60E//+tBP//rQT//60E//+tBP/+rATz/KsFdQAA
+        AADvowkAAAAAAAAAAAAAAAAA96gGAOyiCw79rAXF/60E//+tBP//rQT//60E//+tBP//rQT//60E//+t
+        BP//rQT//60E//+tBP//rQT/96gGEwAAAADwpAkAAAAAAAAAAAD1pwYf/KsFV/mqBnL6qgVd9acGKwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8KQJAAAAAAD2qAc2/awFsP+tBP//rQT//60E//+t
+        BP//rQT//60E//+tBP//rQT//60E//2sBKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPSnBwAAAAAAXlA4Avyr
+        BU78qwWA/q0EpfyrBan+rASl/awEn/yrBX75qQYzAAAAAP2sBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA///////////////////////////////P////h///nwfgfx4PwB+OH4AH
+        jD+Hw4h/g+GAf+PxwD/j4cAP8eHEB/HD48Pxw+Ph8ePD8fHww/H4+MAB8PxgAfA8OAf4AD///gA////B
+        //////////////////////////////////8=
+</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>416, 547</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>BatchRename</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
