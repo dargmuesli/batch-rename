@@ -184,20 +184,20 @@ Please use the contact information [on my website](http://jonas-thelemann.de/bat
 
 # Screenshots
 
-![Splashscreen](BatchRename/Resources/images/Screenshots/splashscreen.png)
+![Splashscreen](BatchRename/Resources/Images/Screenshots/splashscreen.png)
 
-![Welcome](BatchRename/Resources/images/Screenshots/welcome.png)
+![Welcome](BatchRename/Resources/Images/Screenshots/welcome.png)
 
-![Pattern](BatchRename/Resources/images/Screenshots/pattern.png)
+![Pattern](BatchRename/Resources/Images/Screenshots/pattern.png)
 
-![Filetype](BatchRename/Resources/images/Screenshots/filetype.png)
+![Filetype](BatchRename/Resources/Images/Screenshots/filetype.png)
 
-![Filetypes](BatchRename/Resources/images/Screenshots/filetypes.png)
+![Filetypes](BatchRename/Resources/Images/Screenshots/filetypes.png)
 
-![Sorting](BatchRename/Resources/images/Screenshots/sorting.png)
+![Sorting](BatchRename/Resources/Images/Screenshots/sorting.png)
 
-![Settingsone](BatchRename/Resources/images/Screenshots/settings-one.png)
+![Settingsone](BatchRename/Resources/Images/Screenshots/settings-one.png)
 
-![Settingstwo](BatchRename/Resources/images/Screenshots/settings-two.png)
+![Settingstwo](BatchRename/Resources/Images/Screenshots/settings-two.png)
 
-![Protocol](BatchRename/Resources/images/Screenshots/protocol.png)
+![Protocol](BatchRename/Resources/Images/Screenshots/protocol.png)
