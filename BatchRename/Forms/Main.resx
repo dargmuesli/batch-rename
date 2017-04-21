@@ -1187,7 +1187,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="GrpSettingsLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>346, 3690</value>
+    <value>346, 4046</value>
   </data>
   <data name="GrpSettingsLog.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1507,361 +1507,361 @@
   <data name="&gt;&gt;PnlBoxSettings.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="ChkFormatSwitch.AutoSize" type="System.Boolean, mscorlib">
+  <data name="ChkPatternSwitch.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="ChkFormatSwitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="ChkPatternSwitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="ChkFormatSwitch.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ChkPatternSwitch.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 167</value>
   </data>
-  <data name="ChkFormatSwitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="ChkPatternSwitch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="ChkFormatSwitch.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ChkPatternSwitch.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 23</value>
   </data>
-  <data name="ChkFormatSwitch.TabIndex" type="System.Int32, mscorlib">
+  <data name="ChkPatternSwitch.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="ChkFormatSwitch.Text" xml:space="preserve">
+  <data name="ChkPatternSwitch.Text" xml:space="preserve">
     <value>Enable Renaming</value>
   </data>
-  <data name="&gt;&gt;ChkFormatSwitch.Name" xml:space="preserve">
-    <value>ChkFormatSwitch</value>
+  <data name="&gt;&gt;ChkPatternSwitch.Name" xml:space="preserve">
+    <value>ChkPatternSwitch</value>
   </data>
-  <data name="&gt;&gt;ChkFormatSwitch.Type" xml:space="preserve">
+  <data name="&gt;&gt;ChkPatternSwitch.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ChkFormatSwitch.Parent" xml:space="preserve">
-    <value>PnlBoxFormat</value>
+  <data name="&gt;&gt;ChkPatternSwitch.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
   </data>
-  <data name="&gt;&gt;ChkFormatSwitch.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ChkPatternSwitch.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="LblFormatExamples.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="LblPatternExamples.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="LblFormatExamples.AutoSize" type="System.Boolean, mscorlib">
+  <data name="LblPatternExamples.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LblFormatExamples.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="LblPatternExamples.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
-  <data name="LblFormatExamples.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="LblPatternExamples.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="LblFormatExamples.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="LblPatternExamples.Location" type="System.Drawing.Point, System.Drawing">
     <value>159, 243</value>
   </data>
-  <data name="LblFormatExamples.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LblPatternExamples.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 21</value>
   </data>
-  <data name="LblFormatExamples.TabIndex" type="System.Int32, mscorlib">
+  <data name="LblPatternExamples.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="LblFormatExamples.Text" xml:space="preserve">
+  <data name="LblPatternExamples.Text" xml:space="preserve">
     <value>Examples</value>
   </data>
-  <data name="&gt;&gt;LblFormatExamples.Name" xml:space="preserve">
-    <value>LblFormatExamples</value>
+  <data name="&gt;&gt;LblPatternExamples.Name" xml:space="preserve">
+    <value>LblPatternExamples</value>
   </data>
-  <data name="&gt;&gt;LblFormatExamples.Type" xml:space="preserve">
+  <data name="&gt;&gt;LblPatternExamples.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LblFormatExamples.Parent" xml:space="preserve">
-    <value>PnlBoxFormat</value>
+  <data name="&gt;&gt;LblPatternExamples.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
   </data>
-  <data name="&gt;&gt;LblFormatExamples.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LblPatternExamples.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="BtnFormatPrevious.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="BtnPatternPrevious.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
   </data>
-  <data name="BtnFormatPrevious.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="BtnPatternPrevious.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="BtnFormatPrevious.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="BtnPatternPrevious.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="BtnFormatPrevious.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="BtnPatternPrevious.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="BtnFormatPrevious.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="BtnPatternPrevious.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="BtnFormatPrevious.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="BtnPatternPrevious.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="BtnFormatPrevious.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="BtnPatternPrevious.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 65</value>
   </data>
-  <data name="BtnFormatPrevious.TabIndex" type="System.Int32, mscorlib">
+  <data name="BtnPatternPrevious.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;BtnFormatPrevious.Name" xml:space="preserve">
-    <value>BtnFormatPrevious</value>
+  <data name="&gt;&gt;BtnPatternPrevious.Name" xml:space="preserve">
+    <value>BtnPatternPrevious</value>
   </data>
-  <data name="&gt;&gt;BtnFormatPrevious.Type" xml:space="preserve">
+  <data name="&gt;&gt;BtnPatternPrevious.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BtnFormatPrevious.Parent" xml:space="preserve">
-    <value>PnlBoxFormat</value>
+  <data name="&gt;&gt;BtnPatternPrevious.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
   </data>
-  <data name="&gt;&gt;BtnFormatPrevious.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;BtnPatternPrevious.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="LblFormatExample2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="LblPatternExample2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="LblFormatExample2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="LblPatternExample2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="LblFormatExample2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="LblPatternExample2.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 313</value>
   </data>
-  <data name="LblFormatExample2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LblPatternExample2.Size" type="System.Drawing.Size, System.Drawing">
     <value>375, 26</value>
   </data>
-  <data name="LblFormatExample2.TabIndex" type="System.Int32, mscorlib">
+  <data name="LblPatternExample2.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="LblFormatExample2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="LblPatternExample2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;LblFormatExample2.Name" xml:space="preserve">
-    <value>LblFormatExample2</value>
+  <data name="&gt;&gt;LblPatternExample2.Name" xml:space="preserve">
+    <value>LblPatternExample2</value>
   </data>
-  <data name="&gt;&gt;LblFormatExample2.Type" xml:space="preserve">
+  <data name="&gt;&gt;LblPatternExample2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LblFormatExample2.Parent" xml:space="preserve">
-    <value>PnlBoxFormat</value>
+  <data name="&gt;&gt;LblPatternExample2.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
   </data>
-  <data name="&gt;&gt;LblFormatExample2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LblPatternExample2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="LblFormatExample1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="LblPatternExample1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="LblFormatExample1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="LblPatternExample1.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 279</value>
   </data>
-  <data name="LblFormatExample1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LblPatternExample1.Size" type="System.Drawing.Size, System.Drawing">
     <value>375, 26</value>
   </data>
-  <data name="LblFormatExample1.TabIndex" type="System.Int32, mscorlib">
+  <data name="LblPatternExample1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="LblFormatExample1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="LblPatternExample1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;LblFormatExample1.Name" xml:space="preserve">
-    <value>LblFormatExample1</value>
+  <data name="&gt;&gt;LblPatternExample1.Name" xml:space="preserve">
+    <value>LblPatternExample1</value>
   </data>
-  <data name="&gt;&gt;LblFormatExample1.Type" xml:space="preserve">
+  <data name="&gt;&gt;LblPatternExample1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LblFormatExample1.Parent" xml:space="preserve">
-    <value>PnlBoxFormat</value>
+  <data name="&gt;&gt;LblPatternExample1.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
   </data>
-  <data name="&gt;&gt;LblFormatExample1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LblPatternExample1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="BtnFormatSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="BtnPatternSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="BtnFormatSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="BtnPatternSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="BtnFormatSettings.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="BtnPatternSettings.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="BtnFormatSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="BtnPatternSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="BtnFormatSettings.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="BtnPatternSettings.Location" type="System.Drawing.Point, System.Drawing">
     <value>335, 0</value>
   </data>
-  <data name="BtnFormatSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="BtnPatternSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="BtnFormatSettings.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="BtnPatternSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 65</value>
   </data>
-  <data name="BtnFormatSettings.TabIndex" type="System.Int32, mscorlib">
+  <data name="BtnPatternSettings.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;BtnFormatSettings.Name" xml:space="preserve">
-    <value>BtnFormatSettings</value>
+  <data name="&gt;&gt;BtnPatternSettings.Name" xml:space="preserve">
+    <value>BtnPatternSettings</value>
   </data>
-  <data name="&gt;&gt;BtnFormatSettings.Type" xml:space="preserve">
+  <data name="&gt;&gt;BtnPatternSettings.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BtnFormatSettings.Parent" xml:space="preserve">
-    <value>PnlBoxFormat</value>
+  <data name="&gt;&gt;BtnPatternSettings.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
   </data>
-  <data name="&gt;&gt;BtnFormatSettings.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;BtnPatternSettings.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="TxbFormatPattern.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="TxbPattern.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="TxbFormatPattern.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TxbPattern.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 203</value>
   </data>
-  <data name="TxbFormatPattern.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="TxbPattern.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="TxbFormatPattern.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TxbPattern.Size" type="System.Drawing.Size, System.Drawing">
     <value>375, 25</value>
   </data>
-  <data name="TxbFormatPattern.TabIndex" type="System.Int32, mscorlib">
+  <data name="TxbPattern.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="TxbFormatPattern.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+  <data name="TxbPattern.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="&gt;&gt;TxbFormatPattern.Name" xml:space="preserve">
-    <value>TxbFormatPattern</value>
+  <data name="&gt;&gt;TxbPattern.Name" xml:space="preserve">
+    <value>TxbPattern</value>
   </data>
-  <data name="&gt;&gt;TxbFormatPattern.Type" xml:space="preserve">
+  <data name="&gt;&gt;TxbPattern.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TxbFormatPattern.Parent" xml:space="preserve">
-    <value>PnlBoxFormat</value>
+  <data name="&gt;&gt;TxbPattern.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
   </data>
-  <data name="&gt;&gt;TxbFormatPattern.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TxbPattern.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="LblFormatTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="LblPatternTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="LblFormatTitle.AutoSize" type="System.Boolean, mscorlib">
+  <data name="LblPatternTitle.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LblFormatTitle.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="LblPatternTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 20pt, style=Bold</value>
   </data>
-  <data name="LblFormatTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="LblPatternTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="LblFormatTitle.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="LblPatternTitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>145, 10</value>
   </data>
-  <data name="LblFormatTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 37</value>
+  <data name="LblPatternTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 37</value>
   </data>
-  <data name="LblFormatTitle.TabIndex" type="System.Int32, mscorlib">
+  <data name="LblPatternTitle.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="LblFormatTitle.Text" xml:space="preserve">
-    <value>Format</value>
+  <data name="LblPatternTitle.Text" xml:space="preserve">
+    <value>Pattern</value>
   </data>
-  <data name="&gt;&gt;LblFormatTitle.Name" xml:space="preserve">
-    <value>LblFormatTitle</value>
+  <data name="&gt;&gt;LblPatternTitle.Name" xml:space="preserve">
+    <value>LblPatternTitle</value>
   </data>
-  <data name="&gt;&gt;LblFormatTitle.Type" xml:space="preserve">
+  <data name="&gt;&gt;LblPatternTitle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LblFormatTitle.Parent" xml:space="preserve">
-    <value>PnlBoxFormat</value>
+  <data name="&gt;&gt;LblPatternTitle.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
   </data>
-  <data name="&gt;&gt;LblFormatTitle.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LblPatternTitle.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="BtnFormatNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="BtnPatternNext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
   </data>
-  <data name="BtnFormatNext.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="BtnPatternNext.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="BtnFormatNext.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="BtnPatternNext.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="BtnFormatNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="BtnPatternNext.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="BtnFormatNext.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="BtnPatternNext.Location" type="System.Drawing.Point, System.Drawing">
     <value>168, 400</value>
   </data>
-  <data name="BtnFormatNext.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="BtnPatternNext.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="BtnFormatNext.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="BtnPatternNext.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 65</value>
   </data>
-  <data name="BtnFormatNext.TabIndex" type="System.Int32, mscorlib">
+  <data name="BtnPatternNext.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;BtnFormatNext.Name" xml:space="preserve">
-    <value>BtnFormatNext</value>
+  <data name="&gt;&gt;BtnPatternNext.Name" xml:space="preserve">
+    <value>BtnPatternNext</value>
   </data>
-  <data name="&gt;&gt;BtnFormatNext.Type" xml:space="preserve">
+  <data name="&gt;&gt;BtnPatternNext.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BtnFormatNext.Parent" xml:space="preserve">
-    <value>PnlBoxFormat</value>
+  <data name="&gt;&gt;BtnPatternNext.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
   </data>
-  <data name="&gt;&gt;BtnFormatNext.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;BtnPatternNext.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="LblFormatDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="LblPatternDescription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="LblFormatDescription.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="LblPatternDescription.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="LblFormatDescription.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="LblPatternDescription.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 70</value>
   </data>
-  <data name="LblFormatDescription.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LblPatternDescription.Size" type="System.Drawing.Size, System.Drawing">
     <value>375, 80</value>
   </data>
-  <data name="LblFormatDescription.TabIndex" type="System.Int32, mscorlib">
+  <data name="LblPatternDescription.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="LblFormatDescription.Text" xml:space="preserve">
+  <data name="LblPatternDescription.Text" xml:space="preserve">
     <value>Set the way your files will be renamed!</value>
   </data>
-  <data name="LblFormatDescription.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="LblPatternDescription.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="&gt;&gt;LblFormatDescription.Name" xml:space="preserve">
-    <value>LblFormatDescription</value>
+  <data name="&gt;&gt;LblPatternDescription.Name" xml:space="preserve">
+    <value>LblPatternDescription</value>
   </data>
-  <data name="&gt;&gt;LblFormatDescription.Type" xml:space="preserve">
+  <data name="&gt;&gt;LblPatternDescription.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LblFormatDescription.Parent" xml:space="preserve">
-    <value>PnlBoxFormat</value>
+  <data name="&gt;&gt;LblPatternDescription.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
   </data>
-  <data name="&gt;&gt;LblFormatDescription.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LblPatternDescription.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="PnlBoxFormat.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="PnlBoxPattern.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 475</value>
   </data>
-  <data name="PnlBoxFormat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="PnlBoxPattern.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="PnlBoxFormat.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PnlBoxPattern.Size" type="System.Drawing.Size, System.Drawing">
     <value>400, 475</value>
   </data>
-  <data name="PnlBoxFormat.TabIndex" type="System.Int32, mscorlib">
+  <data name="PnlBoxPattern.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;PnlBoxFormat.Name" xml:space="preserve">
-    <value>PnlBoxFormat</value>
+  <data name="&gt;&gt;PnlBoxPattern.Name" xml:space="preserve">
+    <value>PnlBoxPattern</value>
   </data>
-  <data name="&gt;&gt;PnlBoxFormat.Type" xml:space="preserve">
+  <data name="&gt;&gt;PnlBoxPattern.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PnlBoxFormat.Parent" xml:space="preserve">
+  <data name="&gt;&gt;PnlBoxPattern.Parent" xml:space="preserve">
     <value>PnlMainBox</value>
   </data>
-  <data name="&gt;&gt;PnlBoxFormat.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;PnlBoxPattern.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="LblFoldersMusic.AutoSize" type="System.Boolean, mscorlib">

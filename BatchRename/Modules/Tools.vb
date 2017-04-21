@@ -234,9 +234,9 @@ Public Module Tools
         ' Create the headline and productversion, mode and "format" string
         strmiddle = "<h2 id=" & Chr(34) & id & Chr(34) & ">" & id & "</h2>" & vbCrLf &
             "<p>" & vbCrLf &
-            FrmMain.PAppName & " " & Application.ProductVersion & "<br>" & vbCrLf & vbCrLf &
+            FrmMain.PAppName & " " & FrmMain.PCurrentVersion.ToString & "<br>" & vbCrLf & vbCrLf &
             "Mode: " & mode & "<br>" & vbCrLf &
-            "Format: " & FrmMain.TxbFormatPattern.Text & "<br>" & vbCrLf & vbCrLf
+            "Format: " & FrmMain.TxbPattern.Text & "<br>" & vbCrLf & vbCrLf
 
         ' Append "source" and "target" strings
         If My.Settings.EnableSorting Then
@@ -371,7 +371,7 @@ Public Module Tools
         If e.Error Is Nothing Then
 
             ' Restart application
-            Shell(FrmMain.PDownloadPath)
+            Shell(FrmMain.PDownloadPath & FrmMain.PDownloadFileName)
             Application.Exit()
         Else
 

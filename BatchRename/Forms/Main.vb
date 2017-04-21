@@ -1,21 +1,23 @@
-﻿Imports System.Environment
+﻿Imports ExifLib
+Imports Microsoft.VisualBasic.FileIO
+Imports Microsoft.WindowsAPICodePack.Taskbar
+Imports Octokit
+Imports System.Environment
 Imports System.Globalization
 Imports System.IO
 Imports System.Net
 Imports System.Reflection
-Imports ExifLibrary
-Imports Microsoft.VisualBasic.FileIO
-Imports Microsoft.WindowsAPICodePack.Taskbar
 
 <Assembly: CLSCompliant(True)>
 
 Public Class FrmMain
 
     ' Application dependent variables
-    Private appName As String = Application.ProductName
+    Private appName As String = System.Windows.Forms.Application.ProductName
     Private appFolder As String = GetFolderPath(SpecialFolder.ApplicationData)
-    Private currentVersion As String = Application.ProductVersion
+    Private currentVersion As Version = My.Application.Info.Version
     Private downloadPath As String = My.Computer.FileSystem.SpecialDirectories.Temp & "\" & appName & "\Update\"
+    Private downloadFileName As String = "setup.exe"
 
     ' Make "switch" buttons' images exchangable
     Private yesImg As Image = My.Resources.Yes_Up
@@ -57,7 +59,7 @@ Public Class FrmMain
         End Get
     End Property
 
-    Public ReadOnly Property PCurrentVersion() As String
+    Public ReadOnly Property PCurrentVersion() As Version
 
         ' Make private "currentVersion" variable gettable
         Get
@@ -70,6 +72,14 @@ Public Class FrmMain
         ' Make private "downloadPath" variable gettable
         Get
             Return downloadPath
+        End Get
+    End Property
+
+    Public ReadOnly Property PDownloadFileName() As String
+
+        ' Make private "downloadFileName" variable gettable
+        Get
+            Return downloadFileName
         End Get
     End Property
 
@@ -194,9 +204,9 @@ Public Class FrmMain
 
         ' Load "splashscreen" settings
         If My.Settings.ShowSplashscreen Then
-            BtnSplashscreenSwitch.BackgroundImage = YesImg
+            BtnSplashscreenSwitch.BackgroundImage = yesImg
         Else
-            BtnSplashscreenSwitch.BackgroundImage = NoImg
+            BtnSplashscreenSwitch.BackgroundImage = noImg
             BtnSplashscreenSwitch.Text = Replace(BtnSplashscreenSwitch.Text, "Disable", "Enable")
         End If
 
@@ -207,9 +217,9 @@ Public Class FrmMain
 
         ' Load "notification" settings
         If My.Settings.ShowNotifications Then
-            BtnNotificationsSwitch.BackgroundImage = YesImg
+            BtnNotificationsSwitch.BackgroundImage = yesImg
         Else
-            BtnNotificationsSwitch.BackgroundImage = NoImg
+            BtnNotificationsSwitch.BackgroundImage = noImg
             BtnNotificationsSwitch.Text = Replace(BtnNotificationsSwitch.Text, "Disable", "Enable")
         End If
 
@@ -221,7 +231,7 @@ Public Class FrmMain
         End If
 
         ' Load "format" settings
-        TxbFormatPattern.Text = My.Settings.Format
+        TxbPattern.Text = My.Settings.Format
 
         ' Load "EXIF" settings
         If My.Settings.UseEXIF Then
@@ -267,11 +277,11 @@ Public Class FrmMain
 
         ' Load "renaming" settings
         If Not My.Settings.EnableRenaming Then
-            ChkFormatSwitch.Checked = False
-            TxbFormatPattern.Enabled = False
-            LblFormatExamples.Enabled = False
-            LblFormatExample1.Enabled = False
-            LblFormatExample2.Enabled = False
+            ChkPatternSwitch.Checked = False
+            TxbPattern.Enabled = False
+            LblPatternExamples.Enabled = False
+            LblPatternExample1.Enabled = False
+            LblPatternExample2.Enabled = False
         End If
 
         ' Initialize "folder" settings
@@ -324,8 +334,8 @@ Public Class FrmMain
         BtnSortingGoHaltSwitch.BackgroundImage = goImg
 
         ' Clean temporary folder
-        If Directory.Exists(My.Computer.FileSystem.SpecialDirectories.Temp & "\" & AppName & "") Then
-            My.Computer.FileSystem.DeleteDirectory(My.Computer.FileSystem.SpecialDirectories.Temp & "\" & AppName & "", DeleteDirectoryOption.DeleteAllContents)
+        If Directory.Exists(My.Computer.FileSystem.SpecialDirectories.Temp & "\" & appName & "") Then
+            My.Computer.FileSystem.DeleteDirectory(My.Computer.FileSystem.SpecialDirectories.Temp & "\" & appName, DeleteDirectoryOption.DeleteAllContents)
         End If
 
         ' Initialize "log" settings
@@ -348,7 +358,7 @@ Public Class FrmMain
         OpenSettings()
     End Sub
 
-    Private Sub BtnFormatSettings_Click(sender As Object, e As EventArgs) Handles BtnFormatSettings.Click
+    Private Sub BtnFormatSettings_Click(sender As Object, e As EventArgs) Handles BtnPatternSettings.Click
 
         ' Move the UI horizontally to the right
         OpenSettings()
@@ -380,7 +390,7 @@ Public Class FrmMain
         customTimer.StartTimer()
     End Sub
 
-    Private Sub BtnFormatNext_Click(sender As Object, e As EventArgs) Handles BtnFormatNext.Click
+    Private Sub BtnFormatNext_Click(sender As Object, e As EventArgs) Handles BtnPatternNext.Click
         Dim customTimer As New CustomTimer(1, -475, -475, "y")
 
         ' Move the UI vertically down
@@ -394,7 +404,7 @@ Public Class FrmMain
         customTimer.StartTimer()
     End Sub
 
-    Private Sub BtnFormatPrevious_Click(sender As Object, e As EventArgs) Handles BtnFormatPrevious.Click
+    Private Sub BtnFormatPrevious_Click(sender As Object, e As EventArgs) Handles BtnPatternPrevious.Click
         Dim customTimer As New CustomTimer(1, -475, 475, "y")
 
         ' Move the UI vertically up
@@ -430,43 +440,43 @@ Public Class FrmMain
     End Sub
 
     <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303:Literale nicht als lokalisierte Parameter übergeben", MessageId:="System.Windows.Forms.Label.set_Text(System.String)")>
-    Private Sub TxbFormatPattern_TextChanged(sender As Object, e As EventArgs) Handles TxbFormatPattern.TextChanged
-        My.Settings.Format = TxbFormatPattern.Text
+    Private Sub TxbFormatPattern_TextChanged(sender As Object, e As EventArgs) Handles TxbPattern.TextChanged
+        My.Settings.Format = TxbPattern.Text
 
         ' Generate an example string
-        If TxbFormatPattern.Text Is Nothing Then
-            LblFormatExample1.Text = "Fill The Textbox Above"
-            LblFormatExample2.Text = "Fill The Textbox Above"
+        If TxbPattern.Text Is Nothing Then
+            LblPatternExample1.Text = "Fill The Textbox Above"
+            LblPatternExample2.Text = "Fill The Textbox Above"
         Else
             Try
 
                 ' Format two example dates
                 Dim testDateTimeOne As Date = #6/27/2014 5:26:03 PM#
-                Dim testStrOne As String = Format(testDateTimeOne, TxbFormatPattern.Text)
+                Dim testStrOne As String = Format(testDateTimeOne, TxbPattern.Text)
                 Dim testDateTimeTwo As Date = #12/3/1980 8:30:12 AM#
-                Dim testStrTwo As String = Format(testDateTimeTwo, TxbFormatPattern.Text)
+                Dim testStrTwo As String = Format(testDateTimeTwo, TxbPattern.Text)
 
                 ' Consider the special tag and append a fileextension for both
-                If TestStrOne.Contains("P") Then
-                    TestStrOne = TestStrOne.Replace("P", "IMG")
+                If testStrOne.Contains("P") Then
+                    testStrOne = testStrOne.Replace("P", "IMG")
                 End If
 
-                LblFormatExample1.Text = TestStrOne & ".jpg"
+                LblPatternExample1.Text = testStrOne & ".jpg"
 
-                If TestStrTwo.Contains("P") Then
-                    TestStrTwo = TestStrTwo.Replace("P", "VID")
+                If testStrTwo.Contains("P") Then
+                    testStrTwo = testStrTwo.Replace("P", "VID")
                 End If
 
-                LblFormatExample2.Text = TestStrTwo & ".mp4"
+                LblPatternExample2.Text = testStrTwo & ".mp4"
             Catch fe As FormatException
 
                 ' Warn that the input is malformed
-                LblFormatExample1.Text = "Format Exception"
-                LblFormatExample2.Text = "Format Exception"
+                LblPatternExample1.Text = "Format Exception"
+                LblPatternExample2.Text = "Format Exception"
             End Try
         End If
 
-        TxbFormatPattern.DeselectAll()
+        TxbPattern.DeselectAll()
     End Sub
 
     Private Sub ChkFolderSubfolder_CheckedChanged(sender As Object, e As EventArgs) Handles ChkFolderSubfolder.CheckedChanged
@@ -479,21 +489,21 @@ Public Class FrmMain
         End If
     End Sub
 
-    Private Sub ChkFormatSwitch_MouseUp(sender As Object, e As EventArgs) Handles ChkFormatSwitch.MouseUp
+    Private Sub ChkFormatSwitch_MouseUp(sender As Object, e As EventArgs) Handles ChkPatternSwitch.MouseUp
 
         ' Switch "renaming" setting on or off and enable or disable UI elements
-        If ChkFormatSwitch.Checked Then
+        If ChkPatternSwitch.Checked Then
             My.Settings.EnableRenaming = True
-            TxbFormatPattern.Enabled = True
-            LblFormatExamples.Enabled = True
-            LblFormatExample1.Enabled = True
-            LblFormatExample2.Enabled = True
+            TxbPattern.Enabled = True
+            LblPatternExamples.Enabled = True
+            LblPatternExample1.Enabled = True
+            LblPatternExample2.Enabled = True
         Else
             My.Settings.EnableRenaming = False
-            TxbFormatPattern.Enabled = False
-            LblFormatExamples.Enabled = False
-            LblFormatExample1.Enabled = False
-            LblFormatExample2.Enabled = False
+            TxbPattern.Enabled = False
+            LblPatternExamples.Enabled = False
+            LblPatternExample1.Enabled = False
+            LblPatternExample2.Enabled = False
         End If
     End Sub
 
@@ -621,7 +631,7 @@ Public Class FrmMain
             End If
 
             ' Check if there is neither renaming nor sorting activated and warn if so
-            If Not ChkFormatSwitch.Checked And Not ChkSortingSwitch.Checked Then
+            If Not ChkPatternSwitch.Checked And Not ChkSortingSwitch.Checked Then
                 dialogResult = MessageBox.Show("Neither renaming nor sorting is enabled!" & vbCrLf & vbCrLf & "No actions will be executed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
 
@@ -716,7 +726,7 @@ Public Class FrmMain
                 If My.Settings.EnableRenaming Then
 
                     ' Format the parsed date with the user's pattern
-                    targetName = Format(parsedFileDate, TxbFormatPattern.Text)
+                    targetName = Format(parsedFileDate, TxbPattern.Text)
 
                     ' Consider the special tag and append a fileextension
                     If targetName.Contains("P") Then
@@ -776,29 +786,14 @@ Public Class FrmMain
     <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")>
     Private Shared Sub ExtractEXIF(ByRef element As FileInfo, ByRef aDate As String)
 
-        ' Extract "EXIF" data from jpg
-        If My.Settings.UseEXIF AndAlso LCase(element.Extension) = ".jpg" Then
-            Try
-                Dim file As ExifFile = ExifFile.Read(element.FullName)
+        ' Extract "EXIF" data from jpg, jpeg and tiff
+        If My.Settings.UseEXIF AndAlso (LCase(element.Extension) = ".jpg" Or LCase(element.Extension) = ".jpeg" Or LCase(element.Extension) = ".tiff") Then
+            Dim file As New ExifReader(element.FullName)
+            Dim datePictureTaken As DateTime
 
-                If file.Properties.ContainsKey(ExifTag.DateTime) Then
-                    aDate = file.Properties(ExifTag.DateTime).Value
-                End If
-
-                ' Show errormessages to three frequent exceptions
-            Catch aEx As ArgumentException
-                If aEx.HResult <> -2147024809 Then
-                    MessageBox.Show(aEx.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                End If
-            Catch navjfEx As NotValidJPEGFileException
-                If navjfEx.HResult <> -2146233088 Then
-                    MessageBox.Show(navjfEx.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                End If
-            Catch fEx As FormatException
-                If fEx.HResult <> -2146233033 Then
-                    MessageBox.Show(fEx.GetType().ToString & " - " & fEx.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                End If
-            End Try
+            If file.GetTagValue(ExifTags.DateTimeDigitized, datePictureTaken) Then
+                aDate = datePictureTaken.ToString
+            End If
         End If
     End Sub
 
@@ -893,7 +888,7 @@ Public Class FrmMain
     <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")>
     <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303:Literale nicht als lokalisierte Parameter übergeben", MessageId:="System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon,System.Windows.Forms.MessageBoxDefaultButton)")>
     Private Sub BtnSettingsReset_Click(sender As Object, e As EventArgs) Handles BtnSettingsReset.Click
-        Dim exePath = New Uri(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase) & "\" & AppName & ".exe").LocalPath
+        Dim exePath = New Uri(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase) & "\" & appName & ".exe").LocalPath
 
         ' Show a confirmation dialog
         Dim result As Integer = MessageBox.Show("To reset the settings the application needs to be restarted. Do you really want to reset the settings?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
@@ -904,7 +899,7 @@ Public Class FrmMain
             My.Settings.Reset()
 
             ' Restart application, not minimized
-            Application.Exit()
+            System.Windows.Forms.Application.Exit()
             Shell(exePath, AppWinStyle.NormalFocus)
         End If
     End Sub
@@ -912,7 +907,7 @@ Public Class FrmMain
     Private Sub BtnHelpOpen_Click(sender As Object, e As EventArgs) Handles BtnHelpOpen.Click
 
         ' Open the application's page on the developer's website
-        Process.Start("https://jonas-thelemann.de/" & LCase(AppName))
+        Process.Start("https://jonas-thelemann.de/" & LCase(appName))
     End Sub
 
     Private Sub BtnSplashscreenSwitch_Click(sender As Object, e As EventArgs) Handles BtnSplashscreenSwitch.Click
@@ -924,7 +919,7 @@ Public Class FrmMain
     Private Sub BtnLogShow_Click(sender As Object, e As EventArgs) Handles BtnLogShow.Click
 
         ' Open the logfile
-        Process.Start("file:///" & Replace(AppFolder, "\", "/") & "/" & AppName & "/log/log.html")
+        Process.Start("file:///" & Replace(appFolder, "\", "/") & "/" & appName & "/log/log.html")
     End Sub
 
     <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")>
@@ -934,7 +929,7 @@ Public Class FrmMain
     Private Sub BtnLogDelete_Click(sender As Object, e As EventArgs) Handles BtnLogDelete.Click
 
         ' Delete the "log" directory
-        My.Computer.FileSystem.DeleteDirectory(AppFolder & "\" & AppName & "\log", UIOption.OnlyErrorDialogs, RecycleOption.SendToRecycleBin)
+        My.Computer.FileSystem.DeleteDirectory(appFolder & "\" & appName & "\log", UIOption.OnlyErrorDialogs, RecycleOption.SendToRecycleBin)
 
         ' Display a "confirmation" dialog
         MessageBox.Show("Logfile successfully deleted.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -965,10 +960,13 @@ Public Class FrmMain
     Private Async Sub GrpUpdateSearch_Click(sender As Object, e As EventArgs) Handles GrpUpdateSearch.Click
         Try
             Dim dResult As New DialogResult
-            Dim webClient As New WebClient()
-            Dim remoteVersion As String = Nothing
-            Dim remoteVersionNumber As Integer
-            Dim currentVersionNumber = Replace(CurrentVersion, ".", "")
+            Dim webClient As New WebClient
+            Dim ghClient As GitHubClient
+            Dim release As Release
+            Dim remoteVersion As Version
+
+            ghClient = New GitHubClient(New ProductHeaderValue(System.Windows.Forms.Application.ProductName))
+            release = Await ghClient.Repository.Release.GetLatest("Dargmuesli", System.Windows.Forms.Application.ProductName)
 
             ' Connect "download" events to their sub
             AddHandler webClient.DownloadProgressChanged, AddressOf DownloadProgressCallback
@@ -977,38 +975,38 @@ Public Class FrmMain
             ' Update the UI with current task
             LblMainTask.Text = "Searching..."
 
-            ' Check for the newest version
-            Dim result As Stream = Await webClient.OpenReadTaskAsync(New Uri("https://dl.dropboxusercontent.com/u/74738294/" & AppName & "/current_version.txt"))
-            Dim sr As StreamReader = New StreamReader(result)
-
-            ' Read "remote" version number and update taskbar
+            ' Update taskbar and check for the newest version
             TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.Indeterminate)
-            remoteVersion = sr.ReadToEnd()
-            remoteVersionNumber = Replace(remoteVersion, ".", "")
-            sr.Close()
+
+            ' Read "remote" version number
+            remoteVersion = New Version(release.TagName.Remove(0, 1))
+
             TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.NoProgress)
 
             ' Compare version numbers
-            If currentVersionNumber < remoteVersionNumber Then
+            If My.Application.Info.Version.CompareTo(remoteVersion) < 0 Then
 
                 ' A new version exists - offering download
-                dResult = MessageBox.Show("Current version: " & CurrentVersion & vbCrLf & "Newest version available: " & remoteVersion & vbCrLf & vbCrLf & "Do you want to update now?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
-            ElseIf currentVersionNumber > remoteVersionNumber Then
-
-                ' A development build is used - greeting the developer
-                dResult = MessageBox.Show("Current version: " & currentVersion & vbCrLf & "Newest version available: " & remoteVersion & vbCrLf & vbCrLf & "It seems like you are using a development build... Great, dear developer, a new version must be there soon :)", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Else
+                dResult = MessageBox.Show("Current version: " & currentVersion.ToString & vbCrLf & "Newest version available: " & remoteVersion.ToString & vbCrLf & vbCrLf & "Do you want to update now?", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+            ElseIf My.Application.Info.Version.CompareTo(remoteVersion) = 0 Then
 
                 ' No update found - showing status
-                dResult = MessageBox.Show("Current version: " & CurrentVersion & vbCrLf & "Newest version available: " & remoteVersion & vbCrLf & vbCrLf & "No update is available.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                dResult = MessageBox.Show("Current version: " & currentVersion.ToString & vbCrLf & "Newest version available: " & remoteVersion.ToString & vbCrLf & vbCrLf & "No update is available.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            ElseIf My.Application.Info.Version.CompareTo(remoteVersion) > 0 Then
+
+                ' A development build is used - greeting the developer
+                dResult = MessageBox.Show("Current version: " & currentVersion.ToString & vbCrLf & "Newest version available: " & remoteVersion.ToString & vbCrLf & vbCrLf & "It seems like you are using a development build... Great, dear developer, a new version is going to be released soon! :)", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
 
             ' Download newest ".exe" asynchronically
             If dResult = DialogResult.Yes Then
-                If Not File.Exists(DownloadPath & AppName & "_" & remoteVersion & ".exe") Then
-                    My.Computer.FileSystem.CreateDirectory(DownloadPath)
+                downloadFileName = appName & "-" & remoteVersion.ToString & "-Setup.exe"
+
+                If Not File.Exists(downloadPath & downloadFileName) Then
+                    My.Computer.FileSystem.CreateDirectory(downloadPath)
+
                     LblMainTask.Text = "Downloading..."
-                    webClient.DownloadFileAsync(New Uri("https://dl.dropboxusercontent.com/u/74738294/" & AppName & "/" & AppName & "_" & remoteVersion & ".exe"), DownloadPath & AppName & "_" & remoteVersion & ".exe")
+                    webClient.DownloadFileAsync(New Uri(release.Assets.Item(0).BrowserDownloadUrl), downloadPath & downloadFileName)
                 End If
             End If
 
@@ -1033,12 +1031,12 @@ Public Class FrmMain
     Private Sub BtnAboutOpen_Click(sender As Object, e As EventArgs) Handles BtnAboutOpen.Click
 
         ' Show the "about" dialog
-        MessageBox.Show(AppName & " " & CurrentVersion & vbCrLf & "Copyright " & Date.Today.Year & " " & Application.CompanyName & vbCrLf & vbCrLf & "With this application you can rename and sort large amounts of photos and other files at once using a specified pattern." & vbCrLf & vbCrLf & "If you have questions and suggestions you can send an email to" & vbCrLf & "batchrename@jonas-thelemann.de" & vbCrLf & vbCrLf & "Thank you very much!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        MessageBox.Show(appName & " " & currentVersion.ToString & vbCrLf & "Copyright " & Date.Today.Year & " " & System.Windows.Forms.Application.CompanyName & vbCrLf & vbCrLf & "With this application you can rename and sort large amounts of photos and other files at once using a specified pattern." & vbCrLf & vbCrLf & "If you have questions and suggestions you can send an email to" & vbCrLf & "batchrename@jonas-thelemann.de" & vbCrLf & vbCrLf & "Thank you very much!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
     Private Sub LblMainTask_TextChanged(sender As Object, e As EventArgs) Handles LblMainTask.TextChanged
 
         ' Prevent buggy UI
-        Application.DoEvents()
+        System.Windows.Forms.Application.DoEvents()
     End Sub
 End Class

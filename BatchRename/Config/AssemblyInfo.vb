@@ -13,7 +13,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Simply rename and sort many files.")>
 <Assembly: AssemblyCompany("JTP")>
 <Assembly: AssemblyProduct("BatchRename")>
-<Assembly: AssemblyCopyright("Copyright © 2016")>
+<Assembly: AssemblyCopyright("Copyright © 2017")>
 <Assembly: AssemblyTrademark("JTP")>
 
 <Assembly: ComVisible(False)>
@@ -32,6 +32,6 @@ Imports System.Runtime.InteropServices
 ' übernehmen, indem Sie "*" eingeben:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.0.1.0")>
+<Assembly: AssemblyFileVersion("1.0.1.0")>
 <Assembly: NeutralResourcesLanguage("en")>

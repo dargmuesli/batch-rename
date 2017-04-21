@@ -54,17 +54,17 @@ Partial Class FrmMain
         Me.PnlSettingsSpacer = New System.Windows.Forms.Panel()
         Me.BtnSettingsBack = New System.Windows.Forms.Button()
         Me.BtnSettingsReset = New System.Windows.Forms.Button()
-        Me.PnlBoxFormat = New System.Windows.Forms.Panel()
-        Me.ChkFormatSwitch = New System.Windows.Forms.CheckBox()
-        Me.LblFormatExamples = New System.Windows.Forms.Label()
-        Me.BtnFormatPrevious = New System.Windows.Forms.Button()
-        Me.LblFormatExample2 = New System.Windows.Forms.Label()
-        Me.LblFormatExample1 = New System.Windows.Forms.Label()
-        Me.BtnFormatSettings = New System.Windows.Forms.Button()
-        Me.TxbFormatPattern = New System.Windows.Forms.TextBox()
-        Me.LblFormatTitle = New System.Windows.Forms.Label()
-        Me.BtnFormatNext = New System.Windows.Forms.Button()
-        Me.LblFormatDescription = New System.Windows.Forms.Label()
+        Me.PnlBoxPattern = New System.Windows.Forms.Panel()
+        Me.ChkPatternSwitch = New System.Windows.Forms.CheckBox()
+        Me.LblPatternExamples = New System.Windows.Forms.Label()
+        Me.BtnPatternPrevious = New System.Windows.Forms.Button()
+        Me.LblPatternExample2 = New System.Windows.Forms.Label()
+        Me.LblPatternExample1 = New System.Windows.Forms.Label()
+        Me.BtnPatternSettings = New System.Windows.Forms.Button()
+        Me.TxbPattern = New System.Windows.Forms.TextBox()
+        Me.LblPatternTitle = New System.Windows.Forms.Label()
+        Me.BtnPatternNext = New System.Windows.Forms.Button()
+        Me.LblPatternDescription = New System.Windows.Forms.Label()
         Me.PnlBoxSorting = New System.Windows.Forms.Panel()
         Me.GrpSortingFolders = New System.Windows.Forms.GroupBox()
         Me.LblFoldersMusic = New System.Windows.Forms.Label()
@@ -107,7 +107,7 @@ Partial Class FrmMain
         Me.GrpSettingsLog.SuspendLayout()
         Me.PnlMainBox.SuspendLayout()
         Me.PnlBoxSettings.SuspendLayout()
-        Me.PnlBoxFormat.SuspendLayout()
+        Me.PnlBoxPattern.SuspendLayout()
         Me.PnlBoxSorting.SuspendLayout()
         Me.GrpSortingFolders.SuspendLayout()
         Me.GrpSortingSource.SuspendLayout()
@@ -308,7 +308,7 @@ Partial Class FrmMain
         Me.PnlMainBox.Controls.Add(Me.BtnSortingGoHaltSwitch)
         Me.PnlMainBox.Controls.Add(Me.PnlBoxSettings)
         Me.PnlMainBox.Controls.Add(Me.PnlBoxFolder)
-        Me.PnlMainBox.Controls.Add(Me.PnlBoxFormat)
+        Me.PnlMainBox.Controls.Add(Me.PnlBoxPattern)
         Me.PnlMainBox.Controls.Add(Me.PnlBoxSorting)
         Me.PnlMainBox.Controls.Add(Me.PnlBoxFiletype)
         resources.ApplyResources(Me.PnlMainBox, "PnlMainBox")
@@ -358,89 +358,89 @@ Partial Class FrmMain
         Me.BtnSettingsReset.Name = "BtnSettingsReset"
         Me.BtnSettingsReset.UseVisualStyleBackColor = True
         '
-        'PnlBoxFormat
+        'PnlBoxPattern
         '
-        Me.PnlBoxFormat.Controls.Add(Me.ChkFormatSwitch)
-        Me.PnlBoxFormat.Controls.Add(Me.LblFormatExamples)
-        Me.PnlBoxFormat.Controls.Add(Me.BtnFormatPrevious)
-        Me.PnlBoxFormat.Controls.Add(Me.LblFormatExample2)
-        Me.PnlBoxFormat.Controls.Add(Me.LblFormatExample1)
-        Me.PnlBoxFormat.Controls.Add(Me.BtnFormatSettings)
-        Me.PnlBoxFormat.Controls.Add(Me.TxbFormatPattern)
-        Me.PnlBoxFormat.Controls.Add(Me.LblFormatTitle)
-        Me.PnlBoxFormat.Controls.Add(Me.BtnFormatNext)
-        Me.PnlBoxFormat.Controls.Add(Me.LblFormatDescription)
-        resources.ApplyResources(Me.PnlBoxFormat, "PnlBoxFormat")
-        Me.PnlBoxFormat.Name = "PnlBoxFormat"
+        Me.PnlBoxPattern.Controls.Add(Me.ChkPatternSwitch)
+        Me.PnlBoxPattern.Controls.Add(Me.LblPatternExamples)
+        Me.PnlBoxPattern.Controls.Add(Me.BtnPatternPrevious)
+        Me.PnlBoxPattern.Controls.Add(Me.LblPatternExample2)
+        Me.PnlBoxPattern.Controls.Add(Me.LblPatternExample1)
+        Me.PnlBoxPattern.Controls.Add(Me.BtnPatternSettings)
+        Me.PnlBoxPattern.Controls.Add(Me.TxbPattern)
+        Me.PnlBoxPattern.Controls.Add(Me.LblPatternTitle)
+        Me.PnlBoxPattern.Controls.Add(Me.BtnPatternNext)
+        Me.PnlBoxPattern.Controls.Add(Me.LblPatternDescription)
+        resources.ApplyResources(Me.PnlBoxPattern, "PnlBoxPattern")
+        Me.PnlBoxPattern.Name = "PnlBoxPattern"
         '
-        'ChkFormatSwitch
+        'ChkPatternSwitch
         '
-        resources.ApplyResources(Me.ChkFormatSwitch, "ChkFormatSwitch")
-        Me.ChkFormatSwitch.Checked = True
-        Me.ChkFormatSwitch.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.ChkFormatSwitch.Name = "ChkFormatSwitch"
-        Me.ChkFormatSwitch.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.ChkPatternSwitch, "ChkPatternSwitch")
+        Me.ChkPatternSwitch.Checked = True
+        Me.ChkPatternSwitch.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.ChkPatternSwitch.Name = "ChkPatternSwitch"
+        Me.ChkPatternSwitch.UseVisualStyleBackColor = True
         '
-        'LblFormatExamples
+        'LblPatternExamples
         '
-        resources.ApplyResources(Me.LblFormatExamples, "LblFormatExamples")
-        Me.LblFormatExamples.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.LblFormatExamples.Name = "LblFormatExamples"
+        resources.ApplyResources(Me.LblPatternExamples, "LblPatternExamples")
+        Me.LblPatternExamples.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LblPatternExamples.Name = "LblPatternExamples"
         '
-        'BtnFormatPrevious
+        'BtnPatternPrevious
         '
-        resources.ApplyResources(Me.BtnFormatPrevious, "BtnFormatPrevious")
-        Me.BtnFormatPrevious.BackgroundImage = Global.BatchRename.My.Resources.Resources.Up
-        Me.BtnFormatPrevious.FlatAppearance.BorderSize = 0
-        Me.BtnFormatPrevious.Name = "BtnFormatPrevious"
-        Me.BtnFormatPrevious.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.BtnPatternPrevious, "BtnPatternPrevious")
+        Me.BtnPatternPrevious.BackgroundImage = Global.BatchRename.My.Resources.Resources.Up
+        Me.BtnPatternPrevious.FlatAppearance.BorderSize = 0
+        Me.BtnPatternPrevious.Name = "BtnPatternPrevious"
+        Me.BtnPatternPrevious.UseVisualStyleBackColor = True
         '
-        'LblFormatExample2
+        'LblPatternExample2
         '
-        resources.ApplyResources(Me.LblFormatExample2, "LblFormatExample2")
-        Me.LblFormatExample2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.LblFormatExample2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.LblFormatExample2.Name = "LblFormatExample2"
+        resources.ApplyResources(Me.LblPatternExample2, "LblPatternExample2")
+        Me.LblPatternExample2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LblPatternExample2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LblPatternExample2.Name = "LblPatternExample2"
         '
-        'LblFormatExample1
+        'LblPatternExample1
         '
-        Me.LblFormatExample1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.LblFormatExample1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        resources.ApplyResources(Me.LblFormatExample1, "LblFormatExample1")
-        Me.LblFormatExample1.Name = "LblFormatExample1"
+        Me.LblPatternExample1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LblPatternExample1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        resources.ApplyResources(Me.LblPatternExample1, "LblPatternExample1")
+        Me.LblPatternExample1.Name = "LblPatternExample1"
         '
-        'BtnFormatSettings
+        'BtnPatternSettings
         '
-        resources.ApplyResources(Me.BtnFormatSettings, "BtnFormatSettings")
-        Me.BtnFormatSettings.BackgroundImage = Global.BatchRename.My.Resources.Resources.Settings
-        Me.BtnFormatSettings.FlatAppearance.BorderSize = 0
-        Me.BtnFormatSettings.Name = "BtnFormatSettings"
-        Me.BtnFormatSettings.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.BtnPatternSettings, "BtnPatternSettings")
+        Me.BtnPatternSettings.BackgroundImage = Global.BatchRename.My.Resources.Resources.Settings
+        Me.BtnPatternSettings.FlatAppearance.BorderSize = 0
+        Me.BtnPatternSettings.Name = "BtnPatternSettings"
+        Me.BtnPatternSettings.UseVisualStyleBackColor = True
         '
-        'TxbFormatPattern
+        'TxbPattern
         '
-        resources.ApplyResources(Me.TxbFormatPattern, "TxbFormatPattern")
-        Me.TxbFormatPattern.Name = "TxbFormatPattern"
+        resources.ApplyResources(Me.TxbPattern, "TxbPattern")
+        Me.TxbPattern.Name = "TxbPattern"
         '
-        'LblFormatTitle
+        'LblPatternTitle
         '
-        resources.ApplyResources(Me.LblFormatTitle, "LblFormatTitle")
-        Me.LblFormatTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.LblFormatTitle.Name = "LblFormatTitle"
+        resources.ApplyResources(Me.LblPatternTitle, "LblPatternTitle")
+        Me.LblPatternTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LblPatternTitle.Name = "LblPatternTitle"
         '
-        'BtnFormatNext
+        'BtnPatternNext
         '
-        resources.ApplyResources(Me.BtnFormatNext, "BtnFormatNext")
-        Me.BtnFormatNext.BackgroundImage = Global.BatchRename.My.Resources.Resources.Down
-        Me.BtnFormatNext.FlatAppearance.BorderSize = 0
-        Me.BtnFormatNext.Name = "BtnFormatNext"
-        Me.BtnFormatNext.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.BtnPatternNext, "BtnPatternNext")
+        Me.BtnPatternNext.BackgroundImage = Global.BatchRename.My.Resources.Resources.Down
+        Me.BtnPatternNext.FlatAppearance.BorderSize = 0
+        Me.BtnPatternNext.Name = "BtnPatternNext"
+        Me.BtnPatternNext.UseVisualStyleBackColor = True
         '
-        'LblFormatDescription
+        'LblPatternDescription
         '
-        resources.ApplyResources(Me.LblFormatDescription, "LblFormatDescription")
-        Me.LblFormatDescription.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.LblFormatDescription.Name = "LblFormatDescription"
+        resources.ApplyResources(Me.LblPatternDescription, "LblPatternDescription")
+        Me.LblPatternDescription.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LblPatternDescription.Name = "LblPatternDescription"
         '
         'PnlBoxSorting
         '
@@ -711,8 +711,8 @@ Partial Class FrmMain
         Me.PnlMainBox.ResumeLayout(False)
         Me.PnlBoxSettings.ResumeLayout(False)
         Me.PnlBoxSettings.PerformLayout()
-        Me.PnlBoxFormat.ResumeLayout(False)
-        Me.PnlBoxFormat.PerformLayout()
+        Me.PnlBoxPattern.ResumeLayout(False)
+        Me.PnlBoxPattern.PerformLayout()
         Me.PnlBoxSorting.ResumeLayout(False)
         Me.PnlBoxSorting.PerformLayout()
         Me.GrpSortingFolders.ResumeLayout(False)
@@ -740,15 +740,15 @@ Partial Class FrmMain
     Friend WithEvents LblSettingsDescription As Label
     Friend WithEvents PnlMainBox As Panel
     Friend WithEvents ChkFolderSubfolder As CheckBox
-    Friend WithEvents PnlBoxFormat As Panel
-    Friend WithEvents BtnFormatSettings As Button
-    Friend WithEvents TxbFormatPattern As TextBox
-    Friend WithEvents LblFormatTitle As Label
-    Friend WithEvents BtnFormatNext As Button
-    Friend WithEvents LblFormatDescription As Label
-    Friend WithEvents LblFormatExample2 As Label
-    Friend WithEvents LblFormatExample1 As Label
-    Friend WithEvents BtnFormatPrevious As Button
+    Friend WithEvents PnlBoxPattern As Panel
+    Friend WithEvents BtnPatternSettings As Button
+    Friend WithEvents TxbPattern As TextBox
+    Friend WithEvents LblPatternTitle As Label
+    Friend WithEvents BtnPatternNext As Button
+    Friend WithEvents LblPatternDescription As Label
+    Friend WithEvents LblPatternExample2 As Label
+    Friend WithEvents LblPatternExample1 As Label
+    Friend WithEvents BtnPatternPrevious As Button
     Friend WithEvents PnlBoxSorting As Panel
     Friend WithEvents BtnSortingPrevious As Button
     Friend WithEvents BtnSortingSettings As Button
@@ -779,7 +779,7 @@ Partial Class FrmMain
     Friend WithEvents BtnFeedbackReset As Button
     Friend WithEvents PnlBoxSettings As Panel
     Friend WithEvents BtnSettingsBack As Button
-    Friend WithEvents LblFormatExamples As Label
+    Friend WithEvents LblPatternExamples As Label
     Friend WithEvents ChkFiletypeEXIF As CheckBox
     Friend WithEvents ChkSortingSwitch As CheckBox
     Friend WithEvents PgbMain As ProgressBar
@@ -801,6 +801,6 @@ Partial Class FrmMain
     Friend WithEvents LblFoldersVideos As Label
     Friend WithEvents LblFoldersDocuments As Label
     Friend WithEvents LblFoldersImages As Label
-    Friend WithEvents ChkFormatSwitch As CheckBox
+    Friend WithEvents ChkPatternSwitch As CheckBox
     Friend WithEvents BtnFiletypeSelect As Button
 End Class

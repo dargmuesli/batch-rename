@@ -2,57 +2,59 @@
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{50C6F318-1503-4852-9058-0D0E5933E6B7}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <StartupObject>BatchRename.My.MyApplication</StartupObject>
-    <RootNamespace>BatchRename</RootNamespace>
-    <AssemblyName>BatchRename</AssemblyName>
-    <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <PublishUrl>D:\Desktop\BatchRename\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
+    <AppDesignerFolder>Config</AppDesignerFolder>
     <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <AssemblyName>BatchRename</AssemblyName>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <FileAlignment>512</FileAlignment>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <MapFileExtensions>true</MapFileExtensions>
+    <MyType>WindowsForms</MyType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <OutputType>WinExe</OutputType>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50C6F318-1503-4852-9058-0D0E5933E6B7}</ProjectGuid>
+    <PublishUrl>
+    </PublishUrl>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <RootNamespace>BatchRename</RootNamespace>
+    <StartupObject>BatchRename.My.MyApplication</StartupObject>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <UseApplicationTrust>false</UseApplicationTrust>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>BatchRename.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <OutputPath>bin\Debug\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <DebugType>pdbonly</DebugType>
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>BatchRename.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -67,10 +69,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ApplicationManifest>Config\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>BatchRename.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Images\Icons\128.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -80,21 +82,25 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>E316E188079CFBB828F8FE09E4C1F1C8255B5E5C</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>
+    </ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>BatchRename_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <GenerateManifests>true</GenerateManifests>
+    <GenerateManifests>
+    </GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>
+    </SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ExifLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ExifLibrary\ExifLibrary.dll</HintPath>
+    <Reference Include="ExifLib, Version=1.7.0.0, Culture=neutral, PublicKeyToken=30284005913968db, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExifLib.1.7.0.0\lib\net45\ExifLib.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\WindowsAPICodePack-Core.1.1.2\lib\Microsoft.WindowsAPICodePack.dll</HintPath>
@@ -104,16 +110,20 @@
       <HintPath>..\packages\WindowsAPICodePack-Shell.1.1.1\lib\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Octokit, Version=0.24.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Octokit.0.24.0\lib\net45\Octokit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -123,117 +133,118 @@
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Diagnostics" />
-    <Import Include="System.Windows.Forms" />
     <Import Include="System.Linq" />
-    <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Filetype.Designer.vb">
-      <DependentUpon>Filetype.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Filetype.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GlobalSuppressions.vb" />
-    <Compile Include="Main.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main.Designer.vb">
-      <DependentUpon>Main.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
+    <Compile Include="Classes\CustomTimer.vb" />
+    <Compile Include="Classes\Trash.vb" />
+    <Compile Include="Config\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
+    <Compile Include="Config\ApplicationEvents.vb" />
+    <Compile Include="Config\AssemblyInfo.vb" />
+    <Compile Include="Config\GlobalSuppressions.vb" />
+    <Compile Include="Config\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Settings.Designer.vb">
+    <Compile Include="Config\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Settings.vb" />
-    <Compile Include="SplashScreen.Designer.vb">
-      <DependentUpon>SplashScreen.vb</DependentUpon>
+    <Compile Include="Config\Settings.vb" />
+    <Compile Include="Forms\Filetype.Designer.vb">
+      <DependentUpon>Filetype.vb</DependentUpon>
     </Compile>
-    <Compile Include="SplashScreen.vb">
+    <Compile Include="Forms\Filetype.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomTimer.vb" />
-    <Compile Include="Tools.vb" />
-    <Compile Include="Trash.vb" />
+    <Compile Include="Forms\Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Tools.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Filetype.resx">
-      <DependentUpon>Filetype.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.vb</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="My Project\Resources.resx">
+    <EmbeddedResource Include="Config\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SplashScreen.resx">
+    <EmbeddedResource Include="Forms\Filetype.resx">
+      <DependentUpon>Filetype.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="My Project\app.manifest" />
-    <None Include="My Project\Application.myapp">
+    <None Include="Config\App.config" />
+    <None Include="Config\app.manifest" />
+    <None Include="Config\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-    <None Include="My Project\Settings.settings">
+    <None Include="Config\packages.config" />
+    <None Include="Config\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BatchRename.ico" />
-    <None Include="Resources\Info_2.png" />
-    <None Include="Resources\Yes_2.png" />
-    <None Include="Resources\Search_2.png" />
-    <None Include="Resources\Open_2.png" />
-    <None Include="Resources\No_2.png" />
-    <None Include="Resources\Filetype_2.png" />
-    <None Include="Resources\Delete_2.png" />
-    <None Include="Resources\Restore_2.png" />
-    <None Include="Resources\Internet_2.png" />
-    <None Include="Resources\Splashscreen.png" />
-    <None Include="Resources\Filetype.png" />
-    <None Include="Resources\Stop.png" />
-    <None Include="Resources\Yes.png" />
-    <None Include="Resources\View_2.png" />
-    <None Include="Resources\Search.png" />
-    <None Include="Resources\Restore.png" />
-    <None Include="Resources\Open.png" />
-    <None Include="Resources\Internet.png" />
-    <None Include="Resources\Delete.png" />
-    <None Include="Resources\View.png" />
-    <None Include="Resources\Up.png" />
-    <None Include="Resources\Down.png" />
-    <None Include="Resources\Back.png" />
-    <None Include="Resources\No.png" />
-    <None Include="Resources\Next.png" />
-    <None Include="Resources\Arrow.png" />
-    <None Include="Resources\Plus.png" />
-    <None Include="Resources\Settings.png" />
-    <None Include="Resources\Folder.png" />
+    <None Include="packages.config" />
+    <None Include="Resources\Images\Backgrounds\Splashscreen.png" />
+    <None Include="Resources\Images\Buttons\Arrow.png" />
+    <None Include="Resources\Images\Buttons\Back.png" />
+    <None Include="Resources\Images\Buttons\Delete.png" />
+    <None Include="Resources\Images\Buttons\Delete_2.png" />
+    <None Include="Resources\Images\Buttons\Down.png" />
+    <None Include="Resources\Images\Buttons\Filetype.png" />
+    <None Include="Resources\Images\Buttons\Filetype_2.png" />
+    <None Include="Resources\Images\Buttons\Folder.png" />
+    <None Include="Resources\Images\Buttons\Info_2.png" />
+    <None Include="Resources\Images\Buttons\Internet.png" />
+    <None Include="Resources\Images\Buttons\Internet_2.png" />
+    <None Include="Resources\Images\Buttons\Next.png" />
+    <None Include="Resources\Images\Buttons\No.png" />
+    <None Include="Resources\Images\Buttons\No_2.png" />
+    <None Include="Resources\Images\Buttons\Open.png" />
+    <None Include="Resources\Images\Buttons\Open_2.png" />
+    <None Include="Resources\Images\Buttons\Plus.png" />
+    <None Include="Resources\Images\Buttons\Restore.png" />
+    <None Include="Resources\Images\Buttons\Restore_2.png" />
+    <None Include="Resources\Images\Buttons\Search.png" />
+    <None Include="Resources\Images\Buttons\Search_2.png" />
+    <None Include="Resources\Images\Buttons\Settings.png" />
+    <None Include="Resources\Images\Buttons\Stop.png" />
+    <None Include="Resources\Images\Buttons\Up.png" />
+    <None Include="Resources\Images\Buttons\View.png" />
+    <None Include="Resources\Images\Buttons\View_2.png" />
+    <None Include="Resources\Images\Buttons\Yes.png" />
+    <None Include="Resources\Images\Buttons\Yes_2.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
@@ -247,6 +258,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
