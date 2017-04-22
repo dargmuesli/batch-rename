@@ -434,9 +434,7 @@ Public Class FrmMain
     Private Sub TxbFolderSource_TextChanged(sender As Object, e As EventArgs) Handles TxbFolderSource.TextChanged
 
         ' Save av valid directory as source
-        If FileSystem.DirectoryExists(TxbFolderSource.Text) Then
-            My.Settings.SelectedFolders(0) = TxbFolderSource.Text
-        End If
+        My.Settings.SelectedFolders(0) = TxbFolderSource.Text
     End Sub
 
     <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303:Literale nicht als lokalisierte Parameter übergeben", MessageId:="System.Windows.Forms.Label.set_Text(System.String)")>
@@ -619,15 +617,15 @@ Public Class FrmMain
 
             ' Check if all directories exist
             If Not Directory.Exists(My.Settings.SelectedFolders(0)) Then
-                dialogResult = MessageBox.Show("The folder '" & My.Settings.SelectedFolders(0) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                dialogResult = MessageBox.Show("The source folder '" & My.Settings.SelectedFolders(0) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ElseIf Not Directory.Exists(My.Settings.SelectedFolders(1)) Then
-                dialogResult = MessageBox.Show("The folder '" & My.Settings.SelectedFolders(1) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                dialogResult = MessageBox.Show("The image target folder '" & My.Settings.SelectedFolders(1) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ElseIf Not Directory.Exists(My.Settings.SelectedFolders(2)) Then
-                dialogResult = MessageBox.Show("The folder '" & My.Settings.SelectedFolders(2) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                dialogResult = MessageBox.Show("The document target folder '" & My.Settings.SelectedFolders(2) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ElseIf Not Directory.Exists(My.Settings.SelectedFolders(3)) Then
-                dialogResult = MessageBox.Show("The folder '" & My.Settings.SelectedFolders(3) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                dialogResult = MessageBox.Show("The music target folder '" & My.Settings.SelectedFolders(3) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ElseIf Not Directory.Exists(My.Settings.SelectedFolders(4)) Then
-                dialogResult = MessageBox.Show("The folder '" & My.Settings.SelectedFolders(4) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                dialogResult = MessageBox.Show("The video target folder '" & My.Settings.SelectedFolders(4) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
 
             ' Check if there is neither renaming nor sorting activated and warn if so
@@ -692,7 +690,7 @@ Public Class FrmMain
         abort = False
         targetFileList.Clear()
 
-        ' Iterate through all source files
+        ' Iterate over all source files
         For Each element As FileInfo In sourceFileList
 
             ' Exclude unwanted and unknown files
@@ -709,26 +707,26 @@ Public Class FrmMain
                     Exit For
                 End If
 
-                Dim fileDate As String = Nothing
+                Dim fileDate As New Date
 
+                ' Try to use EXIF data
                 ExtractEXIF(element, fileDate)
 
                 ' Fallback to date of last filechange
-                If fileDate Is Nothing Then
-                    fileDate = element.LastWriteTime.ToString(CultureInfo.InvariantCulture)
+                If fileDate = Date.MinValue Then
+                    fileDate = element.LastWriteTime '.ToString(CultureInfo.InvariantCulture)
                 End If
 
                 ' Parse the date
-                Dim parsedFileDate As Date = Date.ParseExact(fileDate, {"dd.MM.yyyy HH:mm:ss", "yyyy:MM:dd HH:mm:ss", "MM/dd/yyyy HH:mm:ss"}, CultureInfo.InvariantCulture, DateTimeStyles.None)
                 Dim targetName As String = ""
                 Dim fullTargetName As String = ""
 
                 If My.Settings.EnableRenaming Then
 
                     ' Format the parsed date with the user's pattern
-                    targetName = Format(parsedFileDate, TxbPattern.Text)
+                    targetName = Format(fileDate, TxbPattern.Text)
 
-                    ' Consider the special tag and append a fileextension
+                    ' Consider the special tag and append a file extension
                     If targetName.Contains("P") Then
                         targetName = Replace(targetName, "P", GetFileType(sourceFileList.IndexOf(element)))
                     End If
@@ -742,22 +740,25 @@ Public Class FrmMain
 
                         ' Search for an unused filename
                         If File.Exists(fullTargetName) Then
+                            Dim fullTargetNameNew As String
+
                             Do
                                 index += 1
-                                fullTargetName = Path.GetDirectoryName(fullTargetName) & "\" & Path.GetFileNameWithoutExtension(fullTargetName) & "_" & index & Path.GetExtension(fullTargetName)
-                            Loop Until Not File.Exists(fullTargetName) Or element.FullName = fullTargetName
+                                fullTargetNameNew = Path.GetDirectoryName(fullTargetName) & "\" & Path.GetFileNameWithoutExtension(fullTargetName) & "_" & index & Path.GetExtension(fullTargetName)
+                            Loop Until Not File.Exists(fullTargetNameNew) Or element.FullName = fullTargetNameNew
 
-                            targetName = Path.GetFileName(fullTargetName)
+                            targetName = Path.GetFileName(fullTargetNameNew)
                         End If
 
                         If element.Name <> targetName Then
 
                             ' Rename files
                             My.Computer.FileSystem.RenameFile(element.FullName, targetName)
-                        End If
 
-                        If File.Exists(element.FullName & ".uid-zps") Then
-                            My.Computer.FileSystem.RenameFile(element.FullName & ".uid-zps", targetName & ".uid-zps")
+                            ' Rename Zoner backup file
+                            If File.Exists(element.FullName & ".uid-zps") Then
+                                My.Computer.FileSystem.RenameFile(element.FullName & ".uid-zps", targetName & ".uid-zps")
+                            End If
                         End If
                     End If
                 End If
@@ -770,13 +771,12 @@ Public Class FrmMain
                 PgbMain.Value = Math.Round((100 * processedFilesize / sizeOfAllFiles + 100 * iterationCount / sourceFileList.Count) / 2)
                 TaskbarManager.Instance.SetProgressValue(PgbMain.Value, 100)
 
+                ' Log the output filename
+                targetFileList.Add("\" & targetName)
+
                 ' Sort the files if desired
                 If My.Settings.EnableSorting Then
-
-                    ' Log the output filename
-                    targetFileList.Add("\" & targetName)
-
-                    Sort(element, parsedFileDate, targetName, fullTargetName)
+                    Sort(element, fileDate, targetName, fullTargetName)
                 End If
             End If
         Next
@@ -788,12 +788,18 @@ Public Class FrmMain
 
         ' Extract "EXIF" data from jpg, jpeg and tiff
         If My.Settings.UseEXIF AndAlso (LCase(element.Extension) = ".jpg" Or LCase(element.Extension) = ".jpeg" Or LCase(element.Extension) = ".tiff") Then
-            Dim file As New ExifReader(element.FullName)
-            Dim datePictureTaken As DateTime
+            Try
+                Dim file As New ExifReader(element.FullName)
+                Dim datePictureTaken As Date
 
-            If file.GetTagValue(ExifTags.DateTimeDigitized, datePictureTaken) Then
-                aDate = datePictureTaken.ToString
-            End If
+                If file.GetTagValue(ExifTags.DateTimeDigitized, datePictureTaken) Then
+                    aDate = datePictureTaken
+                End If
+
+                file.Dispose()
+            Catch ex As ExifLibException
+                ' Skip
+            End Try
         End If
     End Sub
 
