@@ -27,8 +27,8 @@ Partial Class FrmFiletype
         Me.ClbIncludeVideos = New System.Windows.Forms.CheckedListBox()
         Me.ClbExcludeExceptions = New System.Windows.Forms.CheckedListBox()
         Me.ClbIncludeMusic = New System.Windows.Forms.CheckedListBox()
-        Me.ClbIncludeImages = New System.Windows.Forms.CheckedListBox()
-        Me.LblIncludeImages = New System.Windows.Forms.Label()
+        Me.ClbIncludePictures = New System.Windows.Forms.CheckedListBox()
+        Me.LblIncludePictures = New System.Windows.Forms.Label()
         Me.LblIncludeMusic = New System.Windows.Forms.Label()
         Me.LblIncludeVideos = New System.Windows.Forms.Label()
         Me.LblExcludeExceptions = New System.Windows.Forms.Label()
@@ -94,25 +94,25 @@ Partial Class FrmFiletype
         Me.ClbIncludeMusic.Sorted = True
         Me.ClbIncludeMusic.TabIndex = 5
         '
-        'ClbIncludeImages
+        'ClbIncludePictures
         '
-        Me.ClbIncludeImages.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.ClbIncludeImages.FormattingEnabled = True
-        Me.ClbIncludeImages.Location = New System.Drawing.Point(18, 46)
-        Me.ClbIncludeImages.Name = "ClbIncludeImages"
-        Me.ClbIncludeImages.Size = New System.Drawing.Size(81, 184)
-        Me.ClbIncludeImages.Sorted = True
-        Me.ClbIncludeImages.TabIndex = 1
+        Me.ClbIncludePictures.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.ClbIncludePictures.FormattingEnabled = True
+        Me.ClbIncludePictures.Location = New System.Drawing.Point(18, 46)
+        Me.ClbIncludePictures.Name = "ClbIncludePictures"
+        Me.ClbIncludePictures.Size = New System.Drawing.Size(81, 184)
+        Me.ClbIncludePictures.Sorted = True
+        Me.ClbIncludePictures.TabIndex = 1
         '
-        'LblIncludeImages
+        'LblIncludePictures
         '
-        Me.LblIncludeImages.AutoSize = True
-        Me.LblIncludeImages.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.LblIncludeImages.Location = New System.Drawing.Point(32, 24)
-        Me.LblIncludeImages.Name = "LblIncludeImages"
-        Me.LblIncludeImages.Size = New System.Drawing.Size(53, 19)
-        Me.LblIncludeImages.TabIndex = 0
-        Me.LblIncludeImages.Text = "Images"
+        Me.LblIncludePictures.AutoSize = True
+        Me.LblIncludePictures.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.LblIncludePictures.Location = New System.Drawing.Point(32, 24)
+        Me.LblIncludePictures.Name = "LblIncludePictures"
+        Me.LblIncludePictures.Size = New System.Drawing.Size(53, 19)
+        Me.LblIncludePictures.TabIndex = 0
+        Me.LblIncludePictures.Text = "Pictures"
         '
         'LblIncludeMusic
         '
@@ -156,13 +156,13 @@ Partial Class FrmFiletype
         '
         'GrpFiletypeInclude
         '
-        Me.GrpFiletypeInclude.Controls.Add(Me.ClbIncludeImages)
+        Me.GrpFiletypeInclude.Controls.Add(Me.ClbIncludePictures)
         Me.GrpFiletypeInclude.Controls.Add(Me.ClbIncludeMusic)
         Me.GrpFiletypeInclude.Controls.Add(Me.LblIncludeDocuments)
         Me.GrpFiletypeInclude.Controls.Add(Me.ClbIncludeVideos)
         Me.GrpFiletypeInclude.Controls.Add(Me.ClbIncludeDocuments)
         Me.GrpFiletypeInclude.Controls.Add(Me.LblIncludeVideos)
-        Me.GrpFiletypeInclude.Controls.Add(Me.LblIncludeImages)
+        Me.GrpFiletypeInclude.Controls.Add(Me.LblIncludePictures)
         Me.GrpFiletypeInclude.Controls.Add(Me.LblIncludeMusic)
         Me.GrpFiletypeInclude.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GrpFiletypeInclude.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
@@ -209,7 +209,7 @@ Partial Class FrmFiletype
         '
         Me.CmbAddCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CmbAddCategory.FormattingEnabled = True
-        Me.CmbAddCategory.Items.AddRange(New Object() {"Images", "Documents", "Music", "Videos", "Exceptions"})
+        Me.CmbAddCategory.Items.AddRange(New Object() {"Pictures", "Documents", "Music", "Videos", "Exceptions"})
         Me.CmbAddCategory.Location = New System.Drawing.Point(6, 55)
         Me.CmbAddCategory.Name = "CmbAddCategory"
         Me.CmbAddCategory.Size = New System.Drawing.Size(163, 25)
@@ -260,7 +260,7 @@ Partial Class FrmFiletype
         '
         Me.CmbRemoveExtension.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CmbRemoveExtension.FormattingEnabled = True
-        Me.CmbRemoveExtension.Items.AddRange(New Object() {"Images", "Documents", "Music", "Videos", "Exceptions"})
+        Me.CmbRemoveExtension.Items.AddRange(New Object() {"Pictures", "Documents", "Music", "Videos", "Exceptions"})
         Me.CmbRemoveExtension.Location = New System.Drawing.Point(47, 55)
         Me.CmbRemoveExtension.Name = "CmbRemoveExtension"
         Me.CmbRemoveExtension.Size = New System.Drawing.Size(81, 25)
@@ -270,7 +270,7 @@ Partial Class FrmFiletype
         '
         Me.CmbRemoveCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CmbRemoveCategory.FormattingEnabled = True
-        Me.CmbRemoveCategory.Items.AddRange(New Object() {"Images", "Documents", "Music", "Videos", "Exceptions"})
+        Me.CmbRemoveCategory.Items.AddRange(New Object() {"Pictures", "Documents", "Music", "Videos", "Exceptions"})
         Me.CmbRemoveCategory.Location = New System.Drawing.Point(6, 24)
         Me.CmbRemoveCategory.Name = "CmbRemoveCategory"
         Me.CmbRemoveCategory.Size = New System.Drawing.Size(163, 25)
@@ -374,8 +374,8 @@ Partial Class FrmFiletype
     Friend WithEvents ClbIncludeVideos As CheckedListBox
     Friend WithEvents ClbExcludeExceptions As CheckedListBox
     Friend WithEvents ClbIncludeMusic As CheckedListBox
-    Friend WithEvents ClbIncludeImages As CheckedListBox
-    Friend WithEvents LblIncludeImages As Label
+    Friend WithEvents ClbIncludePictures As CheckedListBox
+    Friend WithEvents LblIncludePictures As Label
     Friend WithEvents LblIncludeMusic As Label
     Friend WithEvents LblIncludeVideos As Label
     Friend WithEvents LblExcludeExceptions As Label

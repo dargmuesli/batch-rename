@@ -296,10 +296,14 @@ Public Class FrmMain
         End If
 
         TxbFolderSource.Text = My.Settings.SelectedFolders(0)
-        LblFoldersImages.Text = CompactString(My.Settings.SelectedFolders(1), GrpSortingFolders.Width - 250, LblFoldersImages.Font, TextFormatFlags.PathEllipsis)
+        LblFoldersPictures.Text = CompactString(My.Settings.SelectedFolders(1), GrpSortingFolders.Width - 250, LblFoldersPictures.Font, TextFormatFlags.PathEllipsis)
+        ToolTip.SetToolTip(LblFoldersPictures, My.Settings.SelectedFolders(1))
         LblFoldersDocuments.Text = CompactString(My.Settings.SelectedFolders(2), GrpSortingFolders.Width - 250, LblFoldersDocuments.Font, TextFormatFlags.PathEllipsis)
+        ToolTip.SetToolTip(LblFoldersDocuments, My.Settings.SelectedFolders(2))
         LblFoldersMusic.Text = CompactString(My.Settings.SelectedFolders(3), GrpSortingFolders.Width - 250, LblFoldersMusic.Font, TextFormatFlags.PathEllipsis)
+        ToolTip.SetToolTip(LblFoldersMusic, My.Settings.SelectedFolders(3))
         LblFoldersVideos.Text = CompactString(My.Settings.SelectedFolders(4), GrpSortingFolders.Width - 250, LblFoldersVideos.Font, TextFormatFlags.PathEllipsis)
+        ToolTip.SetToolTip(LblFoldersVideos, My.Settings.SelectedFolders(4))
 
         ' Load "duplicate" settings
         If My.Settings.CreateCopy Then
@@ -537,22 +541,22 @@ Public Class FrmMain
         End If
     End Sub
 
-    Private Sub BtnFoldersImages_Click(sender As Object, e As EventArgs) Handles BtnFoldersImages.Click
+    Private Sub BtnFoldersPictures_Click(sender As Object, e As EventArgs) Handles BtnFoldersPictures.Click
 
         ' Open a "folder browser" dialog
-        OpenFbd(1, My.Settings.SelectedFolders(1), LblFoldersImages) 'GetFolderPath(SpecialFolder.MyPictures)
+        OpenFbd(1, My.Settings.SelectedFolders(1), LblFoldersPictures, ToolTip)
     End Sub
 
-    Private Sub LblFoldersImages_Click(sender As Object, e As EventArgs) Handles LblFoldersImages.Click
+    Private Sub LblFoldersPictures_Click(sender As Object, e As EventArgs) Handles LblFoldersPictures.Click
 
         ' Redirect to button's click event
-        Call BtnFoldersImages_Click(sender, e)
+        Call BtnFoldersPictures_Click(sender, e)
     End Sub
 
     Private Sub BtnFoldersDocuments_Click(sender As Object, e As EventArgs) Handles BtnFoldersDocuments.Click
 
         ' Open a "folder browser" dialog
-        OpenFbd(2, My.Settings.SelectedFolders(2), LblFoldersDocuments)
+        OpenFbd(2, My.Settings.SelectedFolders(2), LblFoldersDocuments, ToolTip)
     End Sub
 
     Private Sub LblFoldersDocuments_Click(sender As Object, e As EventArgs) Handles LblFoldersDocuments.Click
@@ -564,7 +568,7 @@ Public Class FrmMain
     Private Sub BtnFoldersMusic_Click(sender As Object, e As EventArgs) Handles BtnFoldersMusic.Click
 
         ' Open a "folder browser" dialog
-        OpenFbd(3, My.Settings.SelectedFolders(3), LblFoldersMusic)
+        OpenFbd(3, My.Settings.SelectedFolders(3), LblFoldersMusic, ToolTip)
     End Sub
 
     Private Sub LblFoldersMusic_Click(sender As Object, e As EventArgs) Handles LblFoldersMusic.Click
@@ -576,7 +580,7 @@ Public Class FrmMain
     Private Sub BtnFoldersVideos_Click(sender As Object, e As EventArgs) Handles BtnFoldersVideos.Click
 
         ' Open a "folder browser" dialog
-        OpenFbd(4, My.Settings.SelectedFolders(4), LblFoldersVideos)
+        OpenFbd(4, My.Settings.SelectedFolders(4), LblFoldersVideos, ToolTip)
     End Sub
 
     Private Sub LblFoldersVideos_Click(sender As Object, e As EventArgs) Handles LblFoldersVideos.Click
@@ -714,7 +718,7 @@ Public Class FrmMain
 
                 ' Fallback to date of last filechange
                 If fileDate = Date.MinValue Then
-                    fileDate = element.LastWriteTime '.ToString(CultureInfo.InvariantCulture)
+                    fileDate = element.LastWriteTime
                 End If
 
                 ' Parse the date

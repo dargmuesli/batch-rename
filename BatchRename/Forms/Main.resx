@@ -216,6 +216,78 @@
   <data name="&gt;&gt;TxbFolderSource.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;ChkFolderSubfolder.Name" xml:space="preserve">
+    <value>ChkFolderSubfolder</value>
+  </data>
+  <data name="&gt;&gt;ChkFolderSubfolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChkFolderSubfolder.Parent" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;ChkFolderSubfolder.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSource.Name" xml:space="preserve">
+    <value>BtnFolderSource</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSource.Parent" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSource.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSettings.Name" xml:space="preserve">
+    <value>BtnFolderSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSettings.Parent" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderSettings.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderNext.Name" xml:space="preserve">
+    <value>BtnFolderNext</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderNext.Parent" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;BtnFolderNext.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PnlBoxFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PnlBoxFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlBoxFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 475</value>
+  </data>
+  <data name="PnlBoxFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFolder.Name" xml:space="preserve">
+    <value>PnlBoxFolder</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFolder.Parent" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFolder.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="ChkFolderSubfolder.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -354,32 +426,50 @@
   <data name="&gt;&gt;BtnFolderNext.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="PnlBoxFolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PnlBoxFolder.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PnlBoxFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 475</value>
-  </data>
-  <data name="PnlBoxFolder.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxFolder.Name" xml:space="preserve">
-    <value>PnlBoxFolder</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxFolder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxFolder.Parent" xml:space="preserve">
-    <value>PnlMainBox</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxFolder.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="GrpSettingsFeedback.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
+  </data>
+  <data name="&gt;&gt;BtnFeedbackReset.Name" xml:space="preserve">
+    <value>BtnFeedbackReset</value>
+  </data>
+  <data name="&gt;&gt;BtnFeedbackReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFeedbackReset.Parent" xml:space="preserve">
+    <value>GrpSettingsFeedback</value>
+  </data>
+  <data name="&gt;&gt;BtnFeedbackReset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GrpSettingsFeedback.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 538</value>
+  </data>
+  <data name="GrpSettingsFeedback.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsFeedback.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsFeedback.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 130</value>
+  </data>
+  <data name="GrpSettingsFeedback.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="GrpSettingsFeedback.Text" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsFeedback.Name" xml:space="preserve">
+    <value>GrpSettingsFeedback</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsFeedback.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsFeedback.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsFeedback.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="BtnFeedbackReset.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -483,65 +573,8 @@
   <data name="&gt;&gt;BtnFeedbackReset.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="GrpSettingsFeedback.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 538</value>
-  </data>
-  <data name="GrpSettingsFeedback.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsFeedback.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsFeedback.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 130</value>
-  </data>
-  <data name="GrpSettingsFeedback.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="GrpSettingsFeedback.Text" xml:space="preserve">
-    <value>Feedback</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsFeedback.Name" xml:space="preserve">
-    <value>GrpSettingsFeedback</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsFeedback.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsFeedback.Parent" xml:space="preserve">
-    <value>PnlBoxSettings</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsFeedback.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="GrpSettingsAbout.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
-  </data>
-  <data name="BtnAboutOpen.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="BtnAboutOpen.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="BtnAboutOpen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BtnAboutOpen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 20</value>
-  </data>
-  <data name="BtnAboutOpen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="BtnAboutOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 100</value>
-  </data>
-  <data name="BtnAboutOpen.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="BtnAboutOpen.Text" xml:space="preserve">
-    <value>Open About</value>
-  </data>
-  <data name="BtnAboutOpen.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
   </data>
   <data name="&gt;&gt;BtnAboutOpen.Name" xml:space="preserve">
     <value>BtnAboutOpen</value>
@@ -585,8 +618,89 @@
   <data name="&gt;&gt;GrpSettingsAbout.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="BtnAboutOpen.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="BtnAboutOpen.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BtnAboutOpen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BtnAboutOpen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 20</value>
+  </data>
+  <data name="BtnAboutOpen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="BtnAboutOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 100</value>
+  </data>
+  <data name="BtnAboutOpen.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BtnAboutOpen.Text" xml:space="preserve">
+    <value>Open About</value>
+  </data>
+  <data name="BtnAboutOpen.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;BtnAboutOpen.Name" xml:space="preserve">
+    <value>BtnAboutOpen</value>
+  </data>
+  <data name="&gt;&gt;BtnAboutOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnAboutOpen.Parent" xml:space="preserve">
+    <value>GrpSettingsAbout</value>
+  </data>
+  <data name="&gt;&gt;BtnAboutOpen.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="GrpSettingsHelp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
+  </data>
+  <data name="&gt;&gt;BtnHelpOpen.Name" xml:space="preserve">
+    <value>BtnHelpOpen</value>
+  </data>
+  <data name="&gt;&gt;BtnHelpOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnHelpOpen.Parent" xml:space="preserve">
+    <value>GrpSettingsHelp</value>
+  </data>
+  <data name="&gt;&gt;BtnHelpOpen.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GrpSettingsHelp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 262</value>
+  </data>
+  <data name="GrpSettingsHelp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsHelp.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 130</value>
+  </data>
+  <data name="GrpSettingsHelp.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="GrpSettingsHelp.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsHelp.Name" xml:space="preserve">
+    <value>GrpSettingsHelp</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsHelp.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsHelp.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="BtnHelpOpen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -704,38 +818,50 @@
   <data name="&gt;&gt;BtnHelpOpen.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="GrpSettingsHelp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 262</value>
-  </data>
-  <data name="GrpSettingsHelp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsHelp.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsHelp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 130</value>
-  </data>
-  <data name="GrpSettingsHelp.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="GrpSettingsHelp.Text" xml:space="preserve">
-    <value>Help</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsHelp.Name" xml:space="preserve">
-    <value>GrpSettingsHelp</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsHelp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsHelp.Parent" xml:space="preserve">
-    <value>PnlBoxSettings</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsHelp.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
   <data name="GrpSettingsUpdate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
+  </data>
+  <data name="&gt;&gt;GrpUpdateSearch.Name" xml:space="preserve">
+    <value>GrpUpdateSearch</value>
+  </data>
+  <data name="&gt;&gt;GrpUpdateSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpUpdateSearch.Parent" xml:space="preserve">
+    <value>GrpSettingsUpdate</value>
+  </data>
+  <data name="&gt;&gt;GrpUpdateSearch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GrpSettingsUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 676</value>
+  </data>
+  <data name="GrpSettingsUpdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsUpdate.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 130</value>
+  </data>
+  <data name="GrpSettingsUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="GrpSettingsUpdate.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsUpdate.Name" xml:space="preserve">
+    <value>GrpSettingsUpdate</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsUpdate.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsUpdate.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="GrpUpdateSearch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -813,38 +939,50 @@
   <data name="&gt;&gt;GrpUpdateSearch.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="GrpSettingsUpdate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 676</value>
-  </data>
-  <data name="GrpSettingsUpdate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsUpdate.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 130</value>
-  </data>
-  <data name="GrpSettingsUpdate.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="GrpSettingsUpdate.Text" xml:space="preserve">
-    <value>Update</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsUpdate.Name" xml:space="preserve">
-    <value>GrpSettingsUpdate</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsUpdate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsUpdate.Parent" xml:space="preserve">
-    <value>PnlBoxSettings</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsUpdate.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="GrpSettingsNotifications.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
+  </data>
+  <data name="&gt;&gt;BtnNotificationsSwitch.Name" xml:space="preserve">
+    <value>BtnNotificationsSwitch</value>
+  </data>
+  <data name="&gt;&gt;BtnNotificationsSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnNotificationsSwitch.Parent" xml:space="preserve">
+    <value>GrpSettingsNotifications</value>
+  </data>
+  <data name="&gt;&gt;BtnNotificationsSwitch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GrpSettingsNotifications.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 538</value>
+  </data>
+  <data name="GrpSettingsNotifications.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsNotifications.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsNotifications.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 130</value>
+  </data>
+  <data name="GrpSettingsNotifications.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="GrpSettingsNotifications.Text" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsNotifications.Name" xml:space="preserve">
+    <value>GrpSettingsNotifications</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsNotifications.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsNotifications.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsNotifications.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="BtnNotificationsSwitch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -898,38 +1036,50 @@
   <data name="&gt;&gt;BtnNotificationsSwitch.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="GrpSettingsNotifications.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 538</value>
-  </data>
-  <data name="GrpSettingsNotifications.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsNotifications.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsNotifications.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 130</value>
-  </data>
-  <data name="GrpSettingsNotifications.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="GrpSettingsNotifications.Text" xml:space="preserve">
-    <value>Notifications</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsNotifications.Name" xml:space="preserve">
-    <value>GrpSettingsNotifications</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsNotifications.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsNotifications.Parent" xml:space="preserve">
-    <value>PnlBoxSettings</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsNotifications.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="GrpSettingsSplashscreen.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
+  </data>
+  <data name="&gt;&gt;BtnSplashscreenSwitch.Name" xml:space="preserve">
+    <value>BtnSplashscreenSwitch</value>
+  </data>
+  <data name="&gt;&gt;BtnSplashscreenSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSplashscreenSwitch.Parent" xml:space="preserve">
+    <value>GrpSettingsSplashscreen</value>
+  </data>
+  <data name="&gt;&gt;BtnSplashscreenSwitch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 262</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 130</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="GrpSettingsSplashscreen.Text" xml:space="preserve">
+    <value>Splashscreen</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsSplashscreen.Name" xml:space="preserve">
+    <value>GrpSettingsSplashscreen</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsSplashscreen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsSplashscreen.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsSplashscreen.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="BtnSplashscreenSwitch.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -983,38 +1133,65 @@
   <data name="&gt;&gt;BtnSplashscreenSwitch.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="GrpSettingsSplashscreen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 262</value>
-  </data>
-  <data name="GrpSettingsSplashscreen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsSplashscreen.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsSplashscreen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 130</value>
-  </data>
-  <data name="GrpSettingsSplashscreen.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="GrpSettingsSplashscreen.Text" xml:space="preserve">
-    <value>Splashscreen</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsSplashscreen.Name" xml:space="preserve">
-    <value>GrpSettingsSplashscreen</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsSplashscreen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsSplashscreen.Parent" xml:space="preserve">
-    <value>PnlBoxSettings</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsSplashscreen.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
   <data name="GrpSettingsLog.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom</value>
+  </data>
+  <data name="&gt;&gt;BtnLogDelete.Name" xml:space="preserve">
+    <value>BtnLogDelete</value>
+  </data>
+  <data name="&gt;&gt;BtnLogDelete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnLogDelete.Parent" xml:space="preserve">
+    <value>GrpSettingsLog</value>
+  </data>
+  <data name="&gt;&gt;BtnLogDelete.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BtnLogShow.Name" xml:space="preserve">
+    <value>BtnLogShow</value>
+  </data>
+  <data name="&gt;&gt;BtnLogShow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnLogShow.Parent" xml:space="preserve">
+    <value>GrpSettingsLog</value>
+  </data>
+  <data name="&gt;&gt;BtnLogShow.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GrpSettingsLog.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GrpSettingsLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 400</value>
+  </data>
+  <data name="GrpSettingsLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsLog.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSettingsLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 4758</value>
+  </data>
+  <data name="GrpSettingsLog.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="GrpSettingsLog.Text" xml:space="preserve">
+    <value>Log (0 kb)</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsLog.Name" xml:space="preserve">
+    <value>GrpSettingsLog</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsLog.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;GrpSettingsLog.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="BtnLogDelete.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1174,39 +1351,6 @@
   <data name="&gt;&gt;BtnLogShow.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="GrpSettingsLog.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="GrpSettingsLog.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 400</value>
-  </data>
-  <data name="GrpSettingsLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsLog.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSettingsLog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>346, 4046</value>
-  </data>
-  <data name="GrpSettingsLog.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="GrpSettingsLog.Text" xml:space="preserve">
-    <value>Log (0 kb)</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsLog.Name" xml:space="preserve">
-    <value>GrpSettingsLog</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsLog.Parent" xml:space="preserve">
-    <value>PnlBoxSettings</value>
-  </data>
-  <data name="&gt;&gt;GrpSettingsLog.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
   <data name="LblSettingsTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -1320,6 +1464,462 @@
   </data>
   <data name="PnlBoxSettings.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsSpacer.Name" xml:space="preserve">
+    <value>PnlSettingsSpacer</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsSpacer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsSpacer.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;PnlSettingsSpacer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsBack.Name" xml:space="preserve">
+    <value>BtnSettingsBack</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsBack.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsBack.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsReset.Name" xml:space="preserve">
+    <value>BtnSettingsReset</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsReset.Parent" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnSettingsReset.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="PnlBoxSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 0</value>
+  </data>
+  <data name="PnlBoxSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlBoxSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 475</value>
+  </data>
+  <data name="PnlBoxSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSettings.Name" xml:space="preserve">
+    <value>PnlBoxSettings</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSettings.Parent" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ChkPatternSwitch.Name" xml:space="preserve">
+    <value>ChkPatternSwitch</value>
+  </data>
+  <data name="&gt;&gt;ChkPatternSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChkPatternSwitch.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
+  </data>
+  <data name="&gt;&gt;ChkPatternSwitch.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExamples.Name" xml:space="preserve">
+    <value>LblPatternExamples</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExamples.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExamples.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExamples.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternPrevious.Name" xml:space="preserve">
+    <value>BtnPatternPrevious</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternPrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternPrevious.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternPrevious.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExample2.Name" xml:space="preserve">
+    <value>LblPatternExample2</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExample2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExample2.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExample2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExample1.Name" xml:space="preserve">
+    <value>LblPatternExample1</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExample1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExample1.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
+  </data>
+  <data name="&gt;&gt;LblPatternExample1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternSettings.Name" xml:space="preserve">
+    <value>BtnPatternSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternSettings.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternSettings.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;TxbPattern.Name" xml:space="preserve">
+    <value>TxbPattern</value>
+  </data>
+  <data name="&gt;&gt;TxbPattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxbPattern.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
+  </data>
+  <data name="&gt;&gt;TxbPattern.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;LblPatternTitle.Name" xml:space="preserve">
+    <value>LblPatternTitle</value>
+  </data>
+  <data name="&gt;&gt;LblPatternTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblPatternTitle.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
+  </data>
+  <data name="&gt;&gt;LblPatternTitle.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternNext.Name" xml:space="preserve">
+    <value>BtnPatternNext</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternNext.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
+  </data>
+  <data name="&gt;&gt;BtnPatternNext.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;LblPatternDescription.Name" xml:space="preserve">
+    <value>LblPatternDescription</value>
+  </data>
+  <data name="&gt;&gt;LblPatternDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblPatternDescription.Parent" xml:space="preserve">
+    <value>PnlBoxPattern</value>
+  </data>
+  <data name="&gt;&gt;LblPatternDescription.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="PnlBoxPattern.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 475</value>
+  </data>
+  <data name="PnlBoxPattern.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlBoxPattern.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 475</value>
+  </data>
+  <data name="PnlBoxPattern.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxPattern.Name" xml:space="preserve">
+    <value>PnlBoxPattern</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxPattern.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxPattern.Parent" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxPattern.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.Name" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingSource.Name" xml:space="preserve">
+    <value>GrpSortingSource</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingSource.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingSource.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingTarget.Name" xml:space="preserve">
+    <value>GrpSortingTarget</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingTarget.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingTarget.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingTarget.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingPrevious.Name" xml:space="preserve">
+    <value>BtnSortingPrevious</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingPrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingPrevious.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingPrevious.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ChkSortingSwitch.Name" xml:space="preserve">
+    <value>ChkSortingSwitch</value>
+  </data>
+  <data name="&gt;&gt;ChkSortingSwitch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChkSortingSwitch.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;ChkSortingSwitch.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingSettings.Name" xml:space="preserve">
+    <value>BtnSortingSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingSettings.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;BtnSortingSettings.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;LblSortingTitle.Name" xml:space="preserve">
+    <value>LblSortingTitle</value>
+  </data>
+  <data name="&gt;&gt;LblSortingTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblSortingTitle.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;LblSortingTitle.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;LblSortingDescription.Name" xml:space="preserve">
+    <value>LblSortingDescription</value>
+  </data>
+  <data name="&gt;&gt;LblSortingDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblSortingDescription.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;LblSortingDescription.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="PnlBoxSorting.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1425</value>
+  </data>
+  <data name="PnlBoxSorting.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlBoxSorting.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 475</value>
+  </data>
+  <data name="PnlBoxSorting.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSorting.Name" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSorting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSorting.Parent" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxSorting.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSelect.Name" xml:space="preserve">
+    <value>BtnFiletypeSelect</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSelect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSelect.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSelect.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ChkFiletypeEXIF.Name" xml:space="preserve">
+    <value>ChkFiletypeEXIF</value>
+  </data>
+  <data name="&gt;&gt;ChkFiletypeEXIF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChkFiletypeEXIF.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;ChkFiletypeEXIF.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypePrevious.Name" xml:space="preserve">
+    <value>BtnFiletypePrevious</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypePrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypePrevious.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypePrevious.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSettings.Name" xml:space="preserve">
+    <value>BtnFiletypeSettings</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSettings.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeSettings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeTitle.Name" xml:space="preserve">
+    <value>LblFiletypeTitle</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeTitle.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeTitle.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeNext.Name" xml:space="preserve">
+    <value>BtnFiletypeNext</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeNext.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;BtnFiletypeNext.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeDescription.Name" xml:space="preserve">
+    <value>LblFiletypeDescription</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeDescription.Parent" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;LblFiletypeDescription.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PnlBoxFiletype.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 950</value>
+  </data>
+  <data name="PnlBoxFiletype.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlBoxFiletype.Size" type="System.Drawing.Size, System.Drawing">
+    <value>400, 475</value>
+  </data>
+  <data name="PnlBoxFiletype.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFiletype.Name" xml:space="preserve">
+    <value>PnlBoxFiletype</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFiletype.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFiletype.Parent" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlBoxFiletype.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PnlMainBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PnlMainBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="PnlMainBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 2000</value>
+  </data>
+  <data name="PnlMainBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PnlMainBox.Name" xml:space="preserve">
+    <value>PnlMainBox</value>
+  </data>
+  <data name="&gt;&gt;PnlMainBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PnlMainBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PnlMainBox.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="PnlSettingsSpacer.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 821</value>
@@ -1482,30 +2082,6 @@
   </data>
   <data name="&gt;&gt;BtnSettingsReset.ZOrder" xml:space="preserve">
     <value>8</value>
-  </data>
-  <data name="PnlBoxSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 0</value>
-  </data>
-  <data name="PnlBoxSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PnlBoxSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 475</value>
-  </data>
-  <data name="PnlBoxSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxSettings.Name" xml:space="preserve">
-    <value>PnlBoxSettings</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxSettings.Parent" xml:space="preserve">
-    <value>PnlMainBox</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxSettings.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="ChkPatternSwitch.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1840,29 +2416,131 @@
   <data name="&gt;&gt;LblPatternDescription.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="PnlBoxPattern.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 475</value>
+  <data name="&gt;&gt;LblFoldersMusic.Name" xml:space="preserve">
+    <value>LblFoldersMusic</value>
   </data>
-  <data name="PnlBoxPattern.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
+  <data name="&gt;&gt;LblFoldersMusic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PnlBoxPattern.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 475</value>
+  <data name="&gt;&gt;LblFoldersMusic.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
   </data>
-  <data name="PnlBoxPattern.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;LblFoldersMusic.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersVideos.Name" xml:space="preserve">
+    <value>LblFoldersVideos</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersVideos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersVideos.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersVideos.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;PnlBoxPattern.Name" xml:space="preserve">
-    <value>PnlBoxPattern</value>
+  <data name="&gt;&gt;LblFoldersDocuments.Name" xml:space="preserve">
+    <value>LblFoldersDocuments</value>
   </data>
-  <data name="&gt;&gt;PnlBoxPattern.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;LblFoldersDocuments.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PnlBoxPattern.Parent" xml:space="preserve">
-    <value>PnlMainBox</value>
+  <data name="&gt;&gt;LblFoldersDocuments.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
   </data>
-  <data name="&gt;&gt;PnlBoxPattern.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LblFoldersDocuments.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersPictures.Name" xml:space="preserve">
+    <value>LblFoldersPictures</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersPictures.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersPictures.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;LblFoldersPictures.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersVideos.Name" xml:space="preserve">
+    <value>BtnFoldersVideos</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersVideos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersVideos.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersVideos.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersPictures.Name" xml:space="preserve">
+    <value>BtnFoldersPictures</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersPictures.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersPictures.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersPictures.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersMusic.Name" xml:space="preserve">
+    <value>BtnFoldersMusic</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersMusic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersMusic.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersMusic.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersDocuments.Name" xml:space="preserve">
+    <value>BtnFoldersDocuments</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersDocuments.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersDocuments.Parent" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersDocuments.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="GrpSortingFolders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 185</value>
+  </data>
+  <data name="GrpSortingFolders.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSortingFolders.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="GrpSortingFolders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 112</value>
+  </data>
+  <data name="GrpSortingFolders.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="GrpSortingFolders.Text" xml:space="preserve">
+    <value>Folders</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.Name" xml:space="preserve">
+    <value>GrpSortingFolders</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.Parent" xml:space="preserve">
+    <value>PnlBoxSorting</value>
+  </data>
+  <data name="&gt;&gt;GrpSortingFolders.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="LblFoldersMusic.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1954,36 +2632,39 @@
   <data name="&gt;&gt;LblFoldersDocuments.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="LblFoldersImages.AutoSize" type="System.Boolean, mscorlib">
+  <data name="LblFoldersPictures.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LblFoldersImages.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="LblFoldersPictures.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="LblFoldersImages.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="LblFoldersPictures.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 30</value>
   </data>
-  <data name="LblFoldersImages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 19</value>
+  <data name="LblFoldersPictures.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 19</value>
   </data>
-  <data name="LblFoldersImages.TabIndex" type="System.Int32, mscorlib">
+  <data name="LblFoldersPictures.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="LblFoldersImages.Text" xml:space="preserve">
-    <value>Images</value>
+  <data name="LblFoldersPictures.Text" xml:space="preserve">
+    <value>Pictures</value>
   </data>
-  <data name="&gt;&gt;LblFoldersImages.Name" xml:space="preserve">
-    <value>LblFoldersImages</value>
+  <data name="&gt;&gt;LblFoldersPictures.Name" xml:space="preserve">
+    <value>LblFoldersPictures</value>
   </data>
-  <data name="&gt;&gt;LblFoldersImages.Type" xml:space="preserve">
+  <data name="&gt;&gt;LblFoldersPictures.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LblFoldersImages.Parent" xml:space="preserve">
+  <data name="&gt;&gt;LblFoldersPictures.Parent" xml:space="preserve">
     <value>GrpSortingFolders</value>
   </data>
-  <data name="&gt;&gt;LblFoldersImages.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LblFoldersPictures.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="BtnFoldersVideos.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -2005,6 +2686,9 @@
   <data name="BtnFoldersVideos.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <data name="BtnFoldersVideos.ToolTip" xml:space="preserve">
+    <value>Videos</value>
+  </data>
   <data name="&gt;&gt;BtnFoldersVideos.Name" xml:space="preserve">
     <value>BtnFoldersVideos</value>
   </data>
@@ -2017,37 +2701,40 @@
   <data name="&gt;&gt;BtnFoldersVideos.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="BtnFoldersImages.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="BtnFoldersPictures.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="BtnFoldersImages.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="BtnFoldersPictures.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="BtnFoldersImages.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="BtnFoldersPictures.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="BtnFoldersImages.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="BtnFoldersPictures.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 25</value>
   </data>
-  <data name="BtnFoldersImages.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="BtnFoldersPictures.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="BtnFoldersImages.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="BtnFoldersPictures.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 33</value>
   </data>
-  <data name="BtnFoldersImages.TabIndex" type="System.Int32, mscorlib">
+  <data name="BtnFoldersPictures.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;BtnFoldersImages.Name" xml:space="preserve">
-    <value>BtnFoldersImages</value>
+  <data name="BtnFoldersPictures.ToolTip" xml:space="preserve">
+    <value>Pictures</value>
   </data>
-  <data name="&gt;&gt;BtnFoldersImages.Type" xml:space="preserve">
+  <data name="&gt;&gt;BtnFoldersPictures.Name" xml:space="preserve">
+    <value>BtnFoldersPictures</value>
+  </data>
+  <data name="&gt;&gt;BtnFoldersPictures.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BtnFoldersImages.Parent" xml:space="preserve">
+  <data name="&gt;&gt;BtnFoldersPictures.Parent" xml:space="preserve">
     <value>GrpSortingFolders</value>
   </data>
-  <data name="&gt;&gt;BtnFoldersImages.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;BtnFoldersPictures.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="BtnFoldersMusic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
@@ -2070,6 +2757,9 @@
   </data>
   <data name="BtnFoldersMusic.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
+  </data>
+  <data name="BtnFoldersMusic.ToolTip" xml:space="preserve">
+    <value>Music</value>
   </data>
   <data name="&gt;&gt;BtnFoldersMusic.Name" xml:space="preserve">
     <value>BtnFoldersMusic</value>
@@ -2104,6 +2794,9 @@
   <data name="BtnFoldersDocuments.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="BtnFoldersDocuments.ToolTip" xml:space="preserve">
+    <value>Documents</value>
+  </data>
   <data name="&gt;&gt;BtnFoldersDocuments.Name" xml:space="preserve">
     <value>BtnFoldersDocuments</value>
   </data>
@@ -2116,35 +2809,59 @@
   <data name="&gt;&gt;BtnFoldersDocuments.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="GrpSortingFolders.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 185</value>
+  <data name="&gt;&gt;RbSourceCopy.Name" xml:space="preserve">
+    <value>RbSourceCopy</value>
   </data>
-  <data name="GrpSortingFolders.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;RbSourceCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RbSourceCopy.Parent" xml:space="preserve">
+    <value>GrpSortingSource</value>
+  </data>
+  <data name="&gt;&gt;RbSourceCopy.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;RbSourceMove.Name" xml:space="preserve">
+    <value>RbSourceMove</value>
+  </data>
+  <data name="&gt;&gt;RbSourceMove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RbSourceMove.Parent" xml:space="preserve">
+    <value>GrpSortingSource</value>
+  </data>
+  <data name="&gt;&gt;RbSourceMove.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GrpSortingSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 305</value>
+  </data>
+  <data name="GrpSortingSource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="GrpSortingFolders.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="GrpSortingSource.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="GrpSortingFolders.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 112</value>
+  <data name="GrpSortingSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 90</value>
   </data>
-  <data name="GrpSortingFolders.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="GrpSortingSource.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="GrpSortingFolders.Text" xml:space="preserve">
-    <value>Folders</value>
+  <data name="GrpSortingSource.Text" xml:space="preserve">
+    <value>Source</value>
   </data>
-  <data name="&gt;&gt;GrpSortingFolders.Name" xml:space="preserve">
-    <value>GrpSortingFolders</value>
+  <data name="&gt;&gt;GrpSortingSource.Name" xml:space="preserve">
+    <value>GrpSortingSource</value>
   </data>
-  <data name="&gt;&gt;GrpSortingFolders.Type" xml:space="preserve">
+  <data name="&gt;&gt;GrpSortingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GrpSortingFolders.Parent" xml:space="preserve">
+  <data name="&gt;&gt;GrpSortingSource.Parent" xml:space="preserve">
     <value>PnlBoxSorting</value>
   </data>
-  <data name="&gt;&gt;GrpSortingFolders.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;GrpSortingSource.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="RbSourceCopy.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2212,35 +2929,59 @@
   <data name="&gt;&gt;RbSourceMove.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="GrpSortingSource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 305</value>
+  <data name="&gt;&gt;RbTargetDuplicate.Name" xml:space="preserve">
+    <value>RbTargetDuplicate</value>
   </data>
-  <data name="GrpSortingSource.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;RbTargetDuplicate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RbTargetDuplicate.Parent" xml:space="preserve">
+    <value>GrpSortingTarget</value>
+  </data>
+  <data name="&gt;&gt;RbTargetDuplicate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;RbTargetOverwrite.Name" xml:space="preserve">
+    <value>RbTargetOverwrite</value>
+  </data>
+  <data name="&gt;&gt;RbTargetOverwrite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RbTargetOverwrite.Parent" xml:space="preserve">
+    <value>GrpSortingTarget</value>
+  </data>
+  <data name="&gt;&gt;RbTargetOverwrite.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GrpSortingTarget.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 305</value>
+  </data>
+  <data name="GrpSortingTarget.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="GrpSortingSource.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="GrpSortingTarget.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="GrpSortingSource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 90</value>
+  <data name="GrpSortingTarget.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 90</value>
   </data>
-  <data name="GrpSortingSource.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="GrpSortingTarget.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="GrpSortingSource.Text" xml:space="preserve">
-    <value>Source</value>
+  <data name="GrpSortingTarget.Text" xml:space="preserve">
+    <value>Target</value>
   </data>
-  <data name="&gt;&gt;GrpSortingSource.Name" xml:space="preserve">
-    <value>GrpSortingSource</value>
+  <data name="&gt;&gt;GrpSortingTarget.Name" xml:space="preserve">
+    <value>GrpSortingTarget</value>
   </data>
-  <data name="&gt;&gt;GrpSortingSource.Type" xml:space="preserve">
+  <data name="&gt;&gt;GrpSortingTarget.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GrpSortingSource.Parent" xml:space="preserve">
+  <data name="&gt;&gt;GrpSortingTarget.Parent" xml:space="preserve">
     <value>PnlBoxSorting</value>
   </data>
-  <data name="&gt;&gt;GrpSortingSource.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;GrpSortingTarget.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="RbTargetDuplicate.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2307,36 +3048,6 @@
   </data>
   <data name="&gt;&gt;RbTargetOverwrite.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="GrpSortingTarget.Location" type="System.Drawing.Point, System.Drawing">
-    <value>190, 305</value>
-  </data>
-  <data name="GrpSortingTarget.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSortingTarget.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="GrpSortingTarget.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 90</value>
-  </data>
-  <data name="GrpSortingTarget.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="GrpSortingTarget.Text" xml:space="preserve">
-    <value>Target</value>
-  </data>
-  <data name="&gt;&gt;GrpSortingTarget.Name" xml:space="preserve">
-    <value>GrpSortingTarget</value>
-  </data>
-  <data name="&gt;&gt;GrpSortingTarget.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GrpSortingTarget.Parent" xml:space="preserve">
-    <value>PnlBoxSorting</value>
-  </data>
-  <data name="&gt;&gt;GrpSortingTarget.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="BtnSortingPrevious.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -2511,30 +3222,6 @@
   </data>
   <data name="&gt;&gt;LblSortingDescription.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="PnlBoxSorting.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 1425</value>
-  </data>
-  <data name="PnlBoxSorting.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PnlBoxSorting.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 475</value>
-  </data>
-  <data name="PnlBoxSorting.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxSorting.Name" xml:space="preserve">
-    <value>PnlBoxSorting</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxSorting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxSorting.Parent" xml:space="preserve">
-    <value>PnlMainBox</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxSorting.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="BtnFiletypeSelect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -2827,54 +3514,6 @@
   <data name="&gt;&gt;LblFiletypeDescription.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="PnlBoxFiletype.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 950</value>
-  </data>
-  <data name="PnlBoxFiletype.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PnlBoxFiletype.Size" type="System.Drawing.Size, System.Drawing">
-    <value>400, 475</value>
-  </data>
-  <data name="PnlBoxFiletype.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxFiletype.Name" xml:space="preserve">
-    <value>PnlBoxFiletype</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxFiletype.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxFiletype.Parent" xml:space="preserve">
-    <value>PnlMainBox</value>
-  </data>
-  <data name="&gt;&gt;PnlBoxFiletype.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="PnlMainBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PnlMainBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="PnlMainBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 2000</value>
-  </data>
-  <data name="PnlMainBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;PnlMainBox.Name" xml:space="preserve">
-    <value>PnlMainBox</value>
-  </data>
-  <data name="&gt;&gt;PnlMainBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PnlMainBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PnlMainBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="PgbMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
@@ -2965,6 +3604,9 @@
   <data name="&gt;&gt;PnlProgress.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -3067,6 +3709,12 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>BatchRename</value>
+  </data>
+  <data name="&gt;&gt;ToolTip.Name" xml:space="preserve">
+    <value>ToolTip</value>
+  </data>
+  <data name="&gt;&gt;ToolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FrmMain</value>

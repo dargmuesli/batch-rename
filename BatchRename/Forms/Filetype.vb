@@ -18,14 +18,14 @@ Public Class FrmFiletype
         My.Settings.ExceptionExtensions.CopyTo(exceptionExtensions, 0)
 
         ' Reset all checkedlistboxes
-        ClbIncludeImages.Items.Clear()
+        ClbIncludePictures.Items.Clear()
         ClbIncludeDocuments.Items.Clear()
         ClbIncludeMusic.Items.Clear()
         ClbIncludeVideos.Items.Clear()
         ClbExcludeExceptions.Items.Clear()
 
         ' Load arrays to lists
-        ClbIncludeImages.Items.AddRange(imageExtensions)
+        ClbIncludePictures.Items.AddRange(imageExtensions)
         ClbIncludeDocuments.Items.AddRange(documentExtensions)
         ClbIncludeMusic.Items.AddRange(musicExtensions)
         ClbIncludeVideos.Items.AddRange(videoExtensions)
@@ -33,8 +33,8 @@ Public Class FrmFiletype
 
         ' Select chosen extensions
         For Each item As String In FrmMain.PEnabledExtensions
-            If ClbIncludeImages.FindString(item) <> ListBox.NoMatches Then
-                ClbIncludeImages.SetItemChecked(ClbIncludeImages.FindString(item), True)
+            If ClbIncludePictures.FindString(item) <> ListBox.NoMatches Then
+                ClbIncludePictures.SetItemChecked(ClbIncludePictures.FindString(item), True)
             ElseIf ClbIncludeDocuments.FindString(item) <> ListBox.NoMatches Then
                 ClbIncludeDocuments.SetItemChecked(ClbIncludeDocuments.FindString(item), True)
             ElseIf ClbIncludeMusic.FindString(item) <> ListBox.NoMatches Then
@@ -58,8 +58,8 @@ Public Class FrmFiletype
     Private Sub BtnFiletypeAll_Click(sender As Object, e As EventArgs) Handles BtnFiletypeAll.Click
 
         ' Check all checkboxes
-        For i As Integer = 0 To ClbIncludeImages.Items.Count - 1
-            ClbIncludeImages.SetItemChecked(i, True)
+        For i As Integer = 0 To ClbIncludePictures.Items.Count - 1
+            ClbIncludePictures.SetItemChecked(i, True)
         Next i
 
         For i As Integer = 0 To ClbIncludeDocuments.Items.Count - 1
@@ -82,8 +82,8 @@ Public Class FrmFiletype
     Private Sub BtnFiletypeNone_Click(sender As Object, e As EventArgs) Handles BtnFiletypeNone.Click
 
         ' Uncheck all checkboxes
-        For i As Integer = 0 To ClbIncludeImages.Items.Count - 1
-            ClbIncludeImages.SetItemChecked(i, False)
+        For i As Integer = 0 To ClbIncludePictures.Items.Count - 1
+            ClbIncludePictures.SetItemChecked(i, False)
         Next i
 
         For i As Integer = 0 To ClbIncludeDocuments.Items.Count - 1
@@ -108,10 +108,10 @@ Public Class FrmFiletype
 
             ' Add extension to the corresponding list and offer a report
             If CmbAddCategory.SelectedIndex = 0 Then
-                ClbIncludeImages.Items.Add(TxbAddExtension.Text, True)
+                ClbIncludePictures.Items.Add(TxbAddExtension.Text, True)
                 ArrayList.Adapter(My.Settings.ImageExtensions).Sort()
                 Call CmbRemoveCategory_SelectedIndexChanged(sender, e)
-                ClbIncludeImages.SelectedIndex = ClbIncludeImages.Items.IndexOf(TxbAddExtension.Text)
+                ClbIncludePictures.SelectedIndex = ClbIncludePictures.Items.IndexOf(TxbAddExtension.Text)
                 ReportExtension(TxbAddExtension.Text, "Image")
             ElseIf CmbAddCategory.SelectedIndex = 1 Then
                 ClbIncludeDocuments.Items.Add(TxbAddExtension.Text, True)
@@ -171,14 +171,14 @@ Public Class FrmFiletype
         CmbRemoveExtension.Items.Clear()
 
         ' Create string arrays for extension list transfer
-        Dim imageExtensions(ClbIncludeImages.Items.Count - 1) As String
+        Dim imageExtensions(ClbIncludePictures.Items.Count - 1) As String
         Dim documentExtensions(ClbIncludeDocuments.Items.Count - 1) As String
         Dim musicExtensions(ClbIncludeMusic.Items.Count - 1) As String
         Dim videoExtensions(ClbIncludeVideos.Items.Count - 1) As String
         Dim exceptionExtensions(ClbExcludeExceptions.Items.Count - 1) As String
 
         ' Copy extension lists to arrays
-        ClbIncludeImages.Items.CopyTo(imageExtensions, 0)
+        ClbIncludePictures.Items.CopyTo(imageExtensions, 0)
         ClbIncludeDocuments.Items.CopyTo(documentExtensions, 0)
         ClbIncludeMusic.Items.CopyTo(musicExtensions, 0)
         ClbIncludeVideos.Items.CopyTo(videoExtensions, 0)
@@ -200,8 +200,8 @@ Public Class FrmFiletype
         ' Select last selected or first item or clear text
         If CmbRemoveExtension.Items.Count > 0 Then
             If CmbRemoveCategory.SelectedIndex = 0 Then
-                If ClbIncludeImages.SelectedIndex <> -1 Then
-                    CmbRemoveExtension.SelectedIndex = ClbIncludeImages.SelectedIndex
+                If ClbIncludePictures.SelectedIndex <> -1 Then
+                    CmbRemoveExtension.SelectedIndex = ClbIncludePictures.SelectedIndex
                 Else
                     CmbRemoveExtension.SelectedIndex = 0
                 End If
@@ -241,7 +241,7 @@ Public Class FrmFiletype
 
         ' Remove extension from list and settings
         If CmbRemoveCategory.SelectedIndex = 0 Then
-            ClbIncludeImages.Items.Remove(CmbRemoveExtension.Text)
+            ClbIncludePictures.Items.Remove(CmbRemoveExtension.Text)
         ElseIf CmbRemoveCategory.SelectedIndex = 1 Then
             ClbIncludeDocuments.Items.Remove(CmbRemoveExtension.Text)
         ElseIf CmbRemoveCategory.SelectedIndex = 2 Then
@@ -265,8 +265,8 @@ Public Class FrmFiletype
         If Regex.IsMatch(TxbAddExtension.Text, "\.[a-z0-9].*") AndAlso TxbAddExtension.Text <> ".xyz" Then
 
             ' Ensure the typed extension is not already present in a list
-            If ClbIncludeImages.Items.IndexOf(TxbAddExtension.Text) <> -1 Then
-                MessageBox.Show("This extension already exists in the images list!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            If ClbIncludePictures.Items.IndexOf(TxbAddExtension.Text) <> -1 Then
+                MessageBox.Show("This extension already exists in the Pictures list!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Return False
             ElseIf ClbIncludeDocuments.Items.IndexOf(TxbAddExtension.Text) <> -1 Then
                 MessageBox.Show("This extension already exists in the documents list!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -326,7 +326,7 @@ Public Class FrmFiletype
         ' Rebuild the list of chosen extensions
         FrmMain.PEnabledExtensions.Clear()
 
-        For Each item As String In ClbIncludeImages.CheckedItems
+        For Each item As String In ClbIncludePictures.CheckedItems
             FrmMain.PEnabledExtensions.Add(item)
         Next
 
@@ -355,7 +355,7 @@ Public Class FrmFiletype
             My.Settings.VideoExtensions.Clear()
             My.Settings.ExceptionExtensions.Clear()
 
-            For Each item As String In ClbIncludeImages.Items
+            For Each item As String In ClbIncludePictures.Items
                 My.Settings.ImageExtensions.Add(item)
             Next
 
@@ -381,10 +381,10 @@ Public Class FrmFiletype
         End If
     End Sub
 
-    Private Sub ClbIncludeImages_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ClbIncludeImages.SelectedIndexChanged
+    Private Sub ClbIncludePictures_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ClbIncludePictures.SelectedIndexChanged
 
         ' Update and and remove groupboxes
-        SelectedIndexChanged(0, ClbIncludeImages)
+        SelectedIndexChanged(0, ClbIncludePictures)
     End Sub
 
     Private Sub ClbIncludeDocuments_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ClbIncludeDocuments.SelectedIndexChanged

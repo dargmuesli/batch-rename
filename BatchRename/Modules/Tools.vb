@@ -99,9 +99,9 @@ Public Module Tools
 
             ' Search in folder and subfolder if desired
             If FrmMain.ChkFolderSubfolder.Checked Then
-                fileInfo = New DirectoryInfo(My.Settings.SelectedFolders(0)).GetFiles("*" & strng, IO.SearchOption.AllDirectories) 'PDirInfo
+                fileInfo = New DirectoryInfo(My.Settings.SelectedFolders(0)).GetFiles("*" & strng, IO.SearchOption.AllDirectories)
             Else
-                fileInfo = New DirectoryInfo(My.Settings.SelectedFolders(0)).GetFiles("*" & strng, IO.SearchOption.TopDirectoryOnly) 'PDirInfo
+                fileInfo = New DirectoryInfo(My.Settings.SelectedFolders(0)).GetFiles("*" & strng, IO.SearchOption.TopDirectoryOnly)
             End If
 
             ' Update UI
@@ -381,7 +381,7 @@ Public Module Tools
     End Sub
 
     <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303:Literale nicht als lokalisierte Parameter übergeben", MessageId:="System.Windows.Forms.FolderBrowserDialog.set_Description(System.String)")>
-    Sub OpenFbd(ByVal index As Short, ByVal folder As String, ByVal label As Label)
+    Sub OpenFbd(ByVal index As Short, ByVal folder As String, ByVal label As Label, ByVal toolTip As ToolTip)
 
         ' Ensure "index" is in range
         If index < 0 Or index > 4 Then
@@ -398,7 +398,7 @@ Public Module Tools
             Throw New ArgumentNullException("label")
         End If
 
-        Dim fbdialog As New FolderBrowserDialog
+        Dim Fbdialog As New FolderBrowserDialog
 
         Try
 
@@ -407,13 +407,13 @@ Public Module Tools
 
             ' Try to navigate to last used folder
             If FileSystem.DirectoryExists(My.Settings.SelectedFolders(index)) Then
-                fbdialog.SelectedPath = My.Settings.SelectedFolders(index)
+                Fbdialog.SelectedPath = My.Settings.SelectedFolders(index)
             Else
-                fbdialog.SelectedPath = Nothing
+                Fbdialog.SelectedPath = Nothing
             End If
 
             ' Show the "folder browser" dialog
-            fbdialog.Description = "Select directory:"
+            Fbdialog.Description = "Select directory:"
             Fbdialog.ShowDialog()
 
             ' Ensure there is a path selected
@@ -429,7 +429,8 @@ Public Module Tools
             My.Settings.SelectedFolders(index) = Fbdialog.SelectedPath
 
             ' Update UI
-            label.Text = CompactString(fbdialog.SelectedPath, FrmMain.GrpSortingFolders.Width - 250, label.Font, TextFormatFlags.PathEllipsis)
+            label.Text = CompactString(Fbdialog.SelectedPath, FrmMain.GrpSortingFolders.Width - 250, label.Font, TextFormatFlags.PathEllipsis)
+            toolTip.SetToolTip(label, Fbdialog.SelectedPath)
         Finally
 
             ' Free resources

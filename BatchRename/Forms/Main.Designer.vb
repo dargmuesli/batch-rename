@@ -22,6 +22,7 @@ Partial Class FrmMain
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMain))
         Me.LblFolderTitle = New System.Windows.Forms.Label()
         Me.LblMainDescription = New System.Windows.Forms.Label()
@@ -70,9 +71,9 @@ Partial Class FrmMain
         Me.LblFoldersMusic = New System.Windows.Forms.Label()
         Me.LblFoldersVideos = New System.Windows.Forms.Label()
         Me.LblFoldersDocuments = New System.Windows.Forms.Label()
-        Me.LblFoldersImages = New System.Windows.Forms.Label()
+        Me.LblFoldersPictures = New System.Windows.Forms.Label()
         Me.BtnFoldersVideos = New System.Windows.Forms.Button()
-        Me.BtnFoldersImages = New System.Windows.Forms.Button()
+        Me.BtnFoldersPictures = New System.Windows.Forms.Button()
         Me.BtnFoldersMusic = New System.Windows.Forms.Button()
         Me.BtnFoldersDocuments = New System.Windows.Forms.Button()
         Me.GrpSortingSource = New System.Windows.Forms.GroupBox()
@@ -97,6 +98,7 @@ Partial Class FrmMain
         Me.PgbMain = New System.Windows.Forms.ProgressBar()
         Me.LblMainTask = New System.Windows.Forms.Label()
         Me.PnlProgress = New System.Windows.Forms.Panel()
+        Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.PnlBoxFolder.SuspendLayout()
         Me.GrpSettingsFeedback.SuspendLayout()
         Me.GrpSettingsAbout.SuspendLayout()
@@ -460,9 +462,9 @@ Partial Class FrmMain
         Me.GrpSortingFolders.Controls.Add(Me.LblFoldersMusic)
         Me.GrpSortingFolders.Controls.Add(Me.LblFoldersVideos)
         Me.GrpSortingFolders.Controls.Add(Me.LblFoldersDocuments)
-        Me.GrpSortingFolders.Controls.Add(Me.LblFoldersImages)
+        Me.GrpSortingFolders.Controls.Add(Me.LblFoldersPictures)
         Me.GrpSortingFolders.Controls.Add(Me.BtnFoldersVideos)
-        Me.GrpSortingFolders.Controls.Add(Me.BtnFoldersImages)
+        Me.GrpSortingFolders.Controls.Add(Me.BtnFoldersPictures)
         Me.GrpSortingFolders.Controls.Add(Me.BtnFoldersMusic)
         Me.GrpSortingFolders.Controls.Add(Me.BtnFoldersDocuments)
         Me.GrpSortingFolders.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -488,11 +490,11 @@ Partial Class FrmMain
         Me.LblFoldersDocuments.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LblFoldersDocuments.Name = "LblFoldersDocuments"
         '
-        'LblFoldersImages
+        'LblFoldersPictures
         '
-        resources.ApplyResources(Me.LblFoldersImages, "LblFoldersImages")
-        Me.LblFoldersImages.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.LblFoldersImages.Name = "LblFoldersImages"
+        resources.ApplyResources(Me.LblFoldersPictures, "LblFoldersPictures")
+        Me.LblFoldersPictures.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.LblFoldersPictures.Name = "LblFoldersPictures"
         '
         'BtnFoldersVideos
         '
@@ -500,15 +502,17 @@ Partial Class FrmMain
         resources.ApplyResources(Me.BtnFoldersVideos, "BtnFoldersVideos")
         Me.BtnFoldersVideos.FlatAppearance.BorderSize = 0
         Me.BtnFoldersVideos.Name = "BtnFoldersVideos"
+        Me.ToolTip.SetToolTip(Me.BtnFoldersVideos, resources.GetString("BtnFoldersVideos.ToolTip"))
         Me.BtnFoldersVideos.UseVisualStyleBackColor = True
         '
-        'BtnFoldersImages
+        'BtnFoldersPictures
         '
-        Me.BtnFoldersImages.BackgroundImage = Global.BatchRename.My.Resources.Resources.Folder_Up
-        resources.ApplyResources(Me.BtnFoldersImages, "BtnFoldersImages")
-        Me.BtnFoldersImages.FlatAppearance.BorderSize = 0
-        Me.BtnFoldersImages.Name = "BtnFoldersImages"
-        Me.BtnFoldersImages.UseVisualStyleBackColor = True
+        Me.BtnFoldersPictures.BackgroundImage = Global.BatchRename.My.Resources.Resources.Folder_Up
+        resources.ApplyResources(Me.BtnFoldersPictures, "BtnFoldersPictures")
+        Me.BtnFoldersPictures.FlatAppearance.BorderSize = 0
+        Me.BtnFoldersPictures.Name = "BtnFoldersPictures"
+        Me.ToolTip.SetToolTip(Me.BtnFoldersPictures, resources.GetString("BtnFoldersPictures.ToolTip"))
+        Me.BtnFoldersPictures.UseVisualStyleBackColor = True
         '
         'BtnFoldersMusic
         '
@@ -516,6 +520,7 @@ Partial Class FrmMain
         resources.ApplyResources(Me.BtnFoldersMusic, "BtnFoldersMusic")
         Me.BtnFoldersMusic.FlatAppearance.BorderSize = 0
         Me.BtnFoldersMusic.Name = "BtnFoldersMusic"
+        Me.ToolTip.SetToolTip(Me.BtnFoldersMusic, resources.GetString("BtnFoldersMusic.ToolTip"))
         Me.BtnFoldersMusic.UseVisualStyleBackColor = True
         '
         'BtnFoldersDocuments
@@ -524,6 +529,7 @@ Partial Class FrmMain
         resources.ApplyResources(Me.BtnFoldersDocuments, "BtnFoldersDocuments")
         Me.BtnFoldersDocuments.FlatAppearance.BorderSize = 0
         Me.BtnFoldersDocuments.Name = "BtnFoldersDocuments"
+        Me.ToolTip.SetToolTip(Me.BtnFoldersDocuments, resources.GetString("BtnFoldersDocuments.ToolTip"))
         Me.BtnFoldersDocuments.UseVisualStyleBackColor = True
         '
         'GrpSortingSource
@@ -794,13 +800,14 @@ Partial Class FrmMain
     Friend WithEvents RbTargetOverwrite As RadioButton
     Friend WithEvents BtnFoldersVideos As Button
     Friend WithEvents BtnFoldersMusic As Button
-    Friend WithEvents BtnFoldersImages As Button
+    Friend WithEvents BtnFoldersPictures As Button
     Friend WithEvents BtnFoldersDocuments As Button
     Friend WithEvents GrpSortingFolders As GroupBox
     Friend WithEvents LblFoldersMusic As Label
     Friend WithEvents LblFoldersVideos As Label
     Friend WithEvents LblFoldersDocuments As Label
-    Friend WithEvents LblFoldersImages As Label
+    Friend WithEvents LblFoldersPictures As Label
     Friend WithEvents ChkPatternSwitch As CheckBox
     Friend WithEvents BtnFiletypeSelect As Button
+    Friend WithEvents ToolTip As ToolTip
 End Class
