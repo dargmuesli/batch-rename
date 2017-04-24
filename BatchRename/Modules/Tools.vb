@@ -2,6 +2,7 @@
 Imports System.Environment
 Imports System.Globalization
 Imports System.IO
+Imports ExifLib
 Imports Microsoft.VisualBasic.FileIO
 Imports Microsoft.WindowsAPICodePack.Taskbar
 
@@ -236,15 +237,15 @@ Public Module Tools
             "<p>" & vbCrLf &
             FrmMain.PAppName & " " & FrmMain.PCurrentVersion.ToString & "<br>" & vbCrLf & vbCrLf &
             "Mode: " & mode & "<br>" & vbCrLf &
-            "Format: " & FrmMain.TxbPattern.Text & "<br>" & vbCrLf & vbCrLf
+            "Pattern: " & FrmMain.TxbPattern.Text & "<br>" & vbCrLf & vbCrLf
 
         ' Append "source" and "target" strings
         If My.Settings.EnableSorting Then
             strmiddle &= "Source: " & My.Settings.SelectedFolders(0) & "<br>" & vbCrLf &
-                "Pictures target: " & My.Settings.SelectedFolders(1) & "<br>" & vbCrLf &
-                "Documents target: " & My.Settings.SelectedFolders(2) & "<br>" & vbCrLf &
-                "Music target: " & My.Settings.SelectedFolders(3) & "<br>" & vbCrLf &
-                "Videos target: " & My.Settings.SelectedFolders(4) & "<br>" & vbCrLf & vbCrLf
+                "Pictures target folder: " & My.Settings.SelectedFolders(1) & "<br>" & vbCrLf &
+                "Documents target folder: " & My.Settings.SelectedFolders(2) & "<br>" & vbCrLf &
+                "Music target folder: " & My.Settings.SelectedFolders(3) & "<br>" & vbCrLf &
+                "Videos target folder: " & My.Settings.SelectedFolders(4) & "<br>" & vbCrLf & vbCrLf
         Else
             strmiddle &= "Source: " & FrmMain.TxbFolderSource.Text & "<br>" & vbCrLf
         End If
@@ -264,9 +265,9 @@ Public Module Tools
 
                 fName = fName.Remove(0, FrmMain.TxbFolderSource.Text.Length)
 
-                If FrmMain.PSourceFileList.Count = FrmMain.PTargetFileList.Count Then
+                If FrmMain.PTargetFileList.Count = FrmMain.PSourceFileList.Count Then
                     strmiddle &= "<tr>" & vbCrLf & "<td>" & fName & "</td>" & vbCrLf & "<td>" & vbCrLf & FrmMain.PTargetFileList(i) & vbCrLf & "</td>" & vbCrLf & "</tr>" & vbCrLf & vbCrLf
-                ElseIf FrmMain.PSourceFileList.Count * 2 = FrmMain.PTargetFileList.Count Then
+                ElseIf FrmMain.PTargetFileList.Count = FrmMain.PSourceFileList.Count * 2 Then
                     strmiddle &= "<tr>" & vbCrLf & "<td>" & fName & "</td>" & vbCrLf & "<td>" & vbCrLf & FrmMain.PTargetFileList(i * 2) & vbCrLf & "</td>" & vbCrLf & "</tr>" & vbCrLf & vbCrLf
                     strmiddle &= "<tr>" & vbCrLf & "<td>" & "</td>" & vbCrLf & "<td>" & vbCrLf & FrmMain.PTargetFileList(i * 2 + 1) & vbCrLf & "</td>" & vbCrLf & "</tr>" & vbCrLf & vbCrLf
                 Else
@@ -317,8 +318,8 @@ Public Module Tools
     Private presentTime As Date
     Private entireDuration As TimeSpan
 
-    Function GetRemainingSeconds(ByVal allTaskCount As Integer, ByVal doneTaskCount As Integer) As Double
-        Dim averageTimePerIteration, timeRemaining As Double
+    Function GetRemainingSeconds(ByVal allTasks As ArrayList, ByVal doneTasksCount As Integer, ByVal processedFilesize As Long) As Double
+        Dim averageTimePerIteration, averageTimePerSize, timeRemaining As Double
 
         ' Skip first iteration
         If presentTime <> Nothing Then
@@ -335,7 +336,8 @@ Public Module Tools
 
             ' Downsample to average and upsample to remaining duration
             averageTimePerIteration = entireDuration.TotalSeconds / runtimeList.Count
-            timeRemaining = Math.Round(averageTimePerIteration * (allTaskCount - doneTaskCount))
+            averageTimePerSize = entireDuration.TotalSeconds / processedFilesize
+            timeRemaining = Math.Round((averageTimePerIteration * (allTasks.Count - doneTasksCount) + averageTimePerSize * (FrmMain.PSizeOfAllFiles - processedFilesize)) / 2)
         End If
 
         ' Set current time for next iteration
@@ -494,4 +496,33 @@ Public Module Tools
             Fbdialog.Dispose()
         End Try
     End Sub
+
+    <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303:Literale nicht als lokalisierte Parameter übergeben", MessageId:="System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)")>
+    <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")>
+    Public Function TryExtractEXIF(ByRef element As FileInfo, ByRef aDate As String)
+
+        ' Extract "EXIF" data from jpg, jpeg and tiff
+        If (LCase(element.Extension) = ".jpg" Or LCase(element.Extension) = ".jpeg" Or LCase(element.Extension) = ".tiff") Then
+            Try
+                Dim file As New ExifReader(element.FullName)
+                Dim datePictureTaken As Date
+
+                If file.GetTagValue(ExifTags.DateTimeDigitized, datePictureTaken) Then
+                    aDate = datePictureTaken
+
+                    file.Dispose()
+
+                    Return True
+                Else
+                    file.Dispose()
+
+                    Return False
+                End If
+            Catch ex As ExifLibException
+                Return False
+            End Try
+        Else
+            Return False
+        End If
+    End Function
 End Module

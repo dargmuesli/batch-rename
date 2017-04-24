@@ -1,9 +1,7 @@
-﻿Imports ExifLib
-Imports Microsoft.VisualBasic.FileIO
+﻿Imports Microsoft.VisualBasic.FileIO
 Imports Microsoft.WindowsAPICodePack.Taskbar
 Imports Octokit
 Imports System.Environment
-Imports System.Globalization
 Imports System.IO
 Imports System.Net
 Imports System.Reflection
@@ -622,14 +620,18 @@ Public Class FrmMain
             ' Check if all directories exist
             If Not Directory.Exists(My.Settings.SelectedFolders(0)) Then
                 dialogResult = MessageBox.Show("The source folder '" & My.Settings.SelectedFolders(0) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            ElseIf Not Directory.Exists(My.Settings.SelectedFolders(1)) Then
-                dialogResult = MessageBox.Show("The image target folder '" & My.Settings.SelectedFolders(1) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            ElseIf Not Directory.Exists(My.Settings.SelectedFolders(2)) Then
-                dialogResult = MessageBox.Show("The document target folder '" & My.Settings.SelectedFolders(2) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            ElseIf Not Directory.Exists(My.Settings.SelectedFolders(3)) Then
-                dialogResult = MessageBox.Show("The music target folder '" & My.Settings.SelectedFolders(3) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            ElseIf Not Directory.Exists(My.Settings.SelectedFolders(4)) Then
-                dialogResult = MessageBox.Show("The video target folder '" & My.Settings.SelectedFolders(4) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+
+            If My.Settings.EnableSorting Then
+                If Not Directory.Exists(My.Settings.SelectedFolders(1)) Then
+                    dialogResult = MessageBox.Show("The image target folder '" & My.Settings.SelectedFolders(1) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Not Directory.Exists(My.Settings.SelectedFolders(2)) Then
+                    dialogResult = MessageBox.Show("The document target folder '" & My.Settings.SelectedFolders(2) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Not Directory.Exists(My.Settings.SelectedFolders(3)) Then
+                    dialogResult = MessageBox.Show("The music target folder '" & My.Settings.SelectedFolders(3) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf Not Directory.Exists(My.Settings.SelectedFolders(4)) Then
+                    dialogResult = MessageBox.Show("The video target folder '" & My.Settings.SelectedFolders(4) & "' does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
             End If
 
             ' Check if there is neither renaming nor sorting activated and warn if so
@@ -689,6 +691,8 @@ Public Class FrmMain
 
         ' Reset "iterate" variables to default
         Dim processedFilesize As Long = 0
+        Dim remainingSeconds As Double = 0
+        Dim lastRemainingUpdate As Date
 
         iterationCount = 0
         abort = False
@@ -700,8 +704,12 @@ Public Class FrmMain
             ' Exclude unwanted and unknown files
             If Not exceptionExtensions.Contains(LCase(element.Extension)) Or Not My.Settings.Feedback.Contains(LCase(element.Extension)) Then
 
-                ' Calculate the remaining time
-                Dim remainingSeconds As Double = GetRemainingSeconds(sourceFileList.Count, iterationCount)
+                ' Calculate the remaining time every second
+                If Date.Now.Subtract(lastRemainingUpdate).TotalSeconds >= 1 Then
+                    remainingSeconds = GetRemainingSeconds(sourceFileList, iterationCount, processedFilesize)
+
+                    lastRemainingUpdate = Date.Now
+                End If
 
                 ' Update the UI with current task
                 LblMainTask.Text = CompactString("Processing... | " & PgbMain.Value & "% | ~" & remainingSeconds & "s left" & " | " & element.FullName, PgbMain.Width - 10, LblMainTask.Font, TextFormatFlags.PathEllipsis)
@@ -714,16 +722,17 @@ Public Class FrmMain
                 Dim fileDate As New Date
 
                 ' Try to use EXIF data
-                ExtractEXIF(element, fileDate)
+                If My.Settings.UseEXIF Then
+                    If Not TryExtractEXIF(element, fileDate) Then
 
-                ' Fallback to date of last filechange
-                If fileDate = Date.MinValue Then
-                    fileDate = element.LastWriteTime
+                        ' Fallback to date of last filechange
+                        fileDate = element.LastWriteTime
+                    End If
                 End If
 
                 ' Parse the date
                 Dim targetName As String = ""
-                Dim fullTargetName As String = ""
+                Dim targetFullName As String = ""
 
                 If My.Settings.EnableRenaming Then
 
@@ -736,35 +745,48 @@ Public Class FrmMain
                     End If
 
                     targetName = targetName & LCase(element.Extension)
-                    fullTargetName = element.DirectoryName & "\" & targetName
+                    targetFullName = element.DirectoryName & "\" & targetName
 
                     ' Check if the file is already named correctly
                     If element.Name <> targetName Then
                         Dim index As Integer = 1
 
                         ' Search for an unused filename
-                        If File.Exists(fullTargetName) Then
-                            Dim fullTargetNameNew As String
+                        If File.Exists(targetFullName) Then
+                            Dim targetFullNameNew As String
 
                             Do
                                 index += 1
-                                fullTargetNameNew = Path.GetDirectoryName(fullTargetName) & "\" & Path.GetFileNameWithoutExtension(fullTargetName) & "_" & index & Path.GetExtension(fullTargetName)
-                            Loop Until Not File.Exists(fullTargetNameNew) Or element.FullName = fullTargetNameNew
+                                targetFullNameNew = element.DirectoryName & "\" & Path.GetFileNameWithoutExtension(targetName) & "_" & index & element.Extension 'Path.GetDirectoryName(targetFullName) Path.GetExtension(targetFullName)
+                            Loop Until Not File.Exists(targetFullNameNew) Or element.FullName = targetFullNameNew
 
-                            targetName = Path.GetFileName(fullTargetNameNew)
+                            targetName = Path.GetFileName(targetFullNameNew)
+                            targetFullName = targetFullNameNew
                         End If
 
+                        ' Recheck if unused file name isn't the current one
                         If element.Name <> targetName Then
 
                             ' Rename files
                             My.Computer.FileSystem.RenameFile(element.FullName, targetName)
 
+                            Dim elementFullNameZPS = element.FullName & ".uid-zps"
+                            Dim targetNameZPS = targetName & ".uid-zps"
+
                             ' Rename Zoner backup file
-                            If File.Exists(element.FullName & ".uid-zps") Then
-                                My.Computer.FileSystem.RenameFile(element.FullName & ".uid-zps", targetName & ".uid-zps")
+                            If File.Exists(elementFullNameZPS) Then
+                                My.Computer.FileSystem.RenameFile(elementFullNameZPS, targetNameZPS)
                             End If
                         End If
                     End If
+                End If
+
+                ' Log the output filename
+                targetFileList.Add("\" & targetName)
+
+                ' Sort the files if desired
+                If My.Settings.EnableSorting Then
+                    Sort(element, fileDate, targetFullName)
                 End If
 
                 ' Count up iterations and filesize
@@ -774,125 +796,90 @@ Public Class FrmMain
                 ' Set the progress bar to the according value
                 PgbMain.Value = Math.Round((100 * processedFilesize / sizeOfAllFiles + 100 * iterationCount / sourceFileList.Count) / 2)
                 TaskbarManager.Instance.SetProgressValue(PgbMain.Value, 100)
-
-                ' Log the output filename
-                targetFileList.Add("\" & targetName)
-
-                ' Sort the files if desired
-                If My.Settings.EnableSorting Then
-                    Sort(element, fileDate, targetName, fullTargetName)
-                End If
             End If
         Next
     End Sub
 
-    <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1303:Literale nicht als lokalisierte Parameter übergeben", MessageId:="System.Windows.Forms.MessageBox.Show(System.String,System.String,System.Windows.Forms.MessageBoxButtons,System.Windows.Forms.MessageBoxIcon)")>
-    <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")>
-    Private Shared Sub ExtractEXIF(ByRef element As FileInfo, ByRef aDate As String)
+    Private Sub Sort(ByRef element As FileInfo, ByRef parsedFileDate As Date, ByRef sourceFullName As String)
 
-        ' Extract "EXIF" data from jpg, jpeg and tiff
-        If My.Settings.UseEXIF AndAlso (LCase(element.Extension) = ".jpg" Or LCase(element.Extension) = ".jpeg" Or LCase(element.Extension) = ".tiff") Then
-            Try
-                Dim file As New ExifReader(element.FullName)
-                Dim datePictureTaken As Date
-
-                If file.GetTagValue(ExifTags.DateTimeDigitized, datePictureTaken) Then
-                    aDate = datePictureTaken
-                End If
-
-                file.Dispose()
-            Catch ex As ExifLibException
-                ' Skip
-            End Try
-        End If
-    End Sub
-
-    Private Sub Sort(ByRef element As FileInfo, ByRef parsedFileDate As Date, ByRef targetName As String, ByRef fullTargetName As String)
-
-        ' Get along with diabled renaming
-        If targetName = "" Then
-            targetName = element.Name
-        End If
-
-        If fullTargetName = "" Then
-            fullTargetName = element.FullName
+        ' Use original file name when renaming is disabled
+        If sourceFullName = "" Then
+            sourceFullName = element.FullName
         End If
 
         ' Derive folder structure from date
-        Dim subFolderStructure = Format(parsedFileDate, "yyyy-MM")
-        Dim targetFolder As String = Nothing
-
-        subFolderStructure = Replace(subFolderStructure, "-", "\")
+        Dim subFolderStructure = Format(parsedFileDate, "yyyy\\MM")
+        Dim targetFolderFullName As String = Nothing
 
         ' Expand folder structure from "target" settings
         If Not exceptionExtensions.Contains(LCase(element.Extension)) Then
             If imageExtensions.Contains(LCase(element.Extension)) Then
-                targetFolder = My.Settings.SelectedFolders(1) & "\" & subFolderStructure
+                targetFolderFullName = My.Settings.SelectedFolders(1) & "\" & subFolderStructure
             ElseIf documentExtensions.Contains(LCase(element.Extension)) Then
-                targetFolder = My.Settings.SelectedFolders(2) & "\" & subFolderStructure
+                targetFolderFullName = My.Settings.SelectedFolders(2) & "\" & subFolderStructure
             ElseIf musicExtensions.Contains(LCase(element.Extension)) Then
-                targetFolder = My.Settings.SelectedFolders(3) & "\" & subFolderStructure
+                targetFolderFullName = My.Settings.SelectedFolders(3) & "\" & subFolderStructure
             ElseIf videoExtensions.Contains(LCase(element.Extension)) Then
-                targetFolder = My.Settings.SelectedFolders(4) & "\" & subFolderStructure
+                targetFolderFullName = My.Settings.SelectedFolders(4) & "\" & subFolderStructure
             End If
         End If
 
         ' Ensure the "target" folder exists
-        If Not Directory.Exists(targetFolder) Then
-            Directory.CreateDirectory(targetFolder)
+        If Not Directory.Exists(targetFolderFullName) Then
+            Directory.CreateDirectory(targetFolderFullName)
         End If
 
         ' Generate the new full name
-        Dim fullTargetfullName As String = targetFolder & "\" & targetName
-        Dim fullTargetfullNameZPS As String = fullTargetfullName & ".uid-zps"
+        Dim targetFullName As String = targetFolderFullName & "\" & Path.GetFileName(sourceFullName)
+        Dim targetFullNameZPS As String = targetFullName & ".uid-zps"
+        Dim sourceFullNameZPS As String = sourceFullName & ".uid-zps"
 
-        If My.Settings.CreateDuplicate Then
+        If My.Settings.CreateDuplicate And (File.Exists(targetFullName) Or File.Exists(targetFullNameZPS)) Then
+            Dim index = 1
+            Dim targetFullNameNew As String
+            Dim targetFullNameNewZPS As String
 
             ' Find an unused name
-            Dim fullTargetNameParts As String() = Split(fullTargetfullName, ".")
-            Dim index = 1
+            Do
+                index += 1
+                targetFullNameNew = Path.GetDirectoryName(targetFullName) & "\" & Path.GetFileNameWithoutExtension(targetFullName) & "_" & index & Path.GetExtension(targetFullName)
+                targetFullNameNewZPS = targetFullNameNew & ".uid-zps"
+            Loop Until (Not File.Exists(targetFullNameNew) And Not File.Exists(targetFullNameNewZPS)) Or sourceFullName = targetFullNameNew
 
-            If File.Exists(fullTargetfullName) Then
-                Do
-                    index += 1
-                    fullTargetfullName = fullTargetNameParts(0) & "_" & index & "." & fullTargetNameParts(1)
-                Loop Until Not File.Exists(fullTargetfullName)
-            End If
+            targetFullName = targetFullNameNew
+            targetFullNameZPS = targetFullNameNew & ".uid-zps"
         Else
 
             ' Delete existing files
-            If File.Exists(fullTargetfullName) Then
-                File.Delete(fullTargetfullName)
+            If File.Exists(targetFullName) Then
+                File.Delete(targetFullName)
             End If
 
-            If File.Exists(fullTargetfullNameZPS) Then
-                File.Delete(fullTargetfullNameZPS)
+            If File.Exists(targetFullNameZPS) Then
+                File.Delete(targetFullNameZPS)
             End If
         End If
-
-        ' Declare often used variables once
-        Dim fullTargetNameZPS As String = fullTargetName & ".uid-zps"
 
         If My.Settings.CreateCopy Then
 
             ' Copy the file
-            File.Copy(fullTargetName, fullTargetfullName)
+            File.Copy(sourceFullName, targetFullName)
 
-            If File.Exists(fullTargetNameZPS) Then
-                File.Copy(fullTargetNameZPS, fullTargetfullNameZPS)
+            If File.Exists(sourceFullNameZPS) Then
+                File.Copy(sourceFullNameZPS, targetFullNameZPS)
             End If
         Else
 
             ' Move the file
-            File.Move(fullTargetName, fullTargetfullName)
+            File.Move(sourceFullName, targetFullName)
 
-            If File.Exists(fullTargetNameZPS) Then
-                File.Move(fullTargetNameZPS, fullTargetfullNameZPS)
+            If File.Exists(sourceFullNameZPS) Then
+                File.Move(sourceFullNameZPS, targetFullNameZPS)
             End If
         End If
 
         ' Log the output filename
-        targetFileList.Add("\" & subFolderStructure & "\" & targetName)
+        targetFileList.Add("\" & subFolderStructure & "\" & Path.GetFileName(targetFullName))
     End Sub
 
     <CodeAnalysis.SuppressMessage("Microsoft.Globalization", "CA1300:SpecifyMessageBoxOptions")>

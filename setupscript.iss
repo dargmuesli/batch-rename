@@ -1,5 +1,5 @@
 #define MyAppName "BatchRename"
-#define MyAppVersion "1.0.1.0"
+#define MyAppVersion "1.0.3.0"
 #define MyAppPublisher "Jonas Thelemann"
 #define MyAppURL "https://jonas-thelemann.de/"
 #define MyAppExeName "BatchRename.exe"
