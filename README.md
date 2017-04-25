@@ -38,14 +38,11 @@ See [Releases](https://github.com/Dargmuesli/batchrename/releases "Releases").
 See [Issues](https://github.com/Dargmuesli/BatchRename/issues).
 
 ## Contact
-Please use the contact information [on my website](http://jonas-thelemann.de/batch-rename-contact) for giving me - greatly appreciated! - feedback or for questions regarding this software.
+Please use the contact information [on my website](http://jonas-thelemann.de/contact) for giving me - greatly appreciated! - feedback or for questions regarding this software.
 
 # Changelog
 
-## v. 1.0.1.0 - (XX.XX.2017)
-- GitHub API usage for updates
-- "Format" page is now called "Pattern"
-- Readme file replaces Wiki articles
+For information regarding versions newer than v1.0.0.0 see [Releases](https://github.com/Dargmuesli/batchrename/releases "Releases").
 
 ## v. 1.0.0.0 - (20.05.2016)
 ### Finally: The "Appdate"!
