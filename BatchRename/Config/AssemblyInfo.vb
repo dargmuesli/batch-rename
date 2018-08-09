@@ -11,10 +11,10 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("BatchRename")>
 <Assembly: AssemblyDescription("Simply rename and sort many files.")>
-<Assembly: AssemblyCompany("JTP")>
+<Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("BatchRename")>
-<Assembly: AssemblyCopyright("Copyright © 2017")>
-<Assembly: AssemblyTrademark("JTP")>
+<Assembly: AssemblyCopyright("Copyright © 2018")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
