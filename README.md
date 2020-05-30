@@ -3,7 +3,7 @@ With this application you can rename and sort large amounts of photos and other 
 It is especially useful for photos with stored *EXIF data*. For example, you can move the file `Camera-Uploads\0024.jpg` to `2015\06\2015-06-25_12-34-02.jpg` automatically!
 
 ## Download
-See [Releases](https://github.com/Dargmuesli/batchrename/releases "Releases").
+See [Releases](https://github.com/dargmuesli/batch-rename/releases "Releases").
 
 **Attention:** You may get a Windows Smartscreen warning as this program is not signed with a certificate from a certificate authority.
 
@@ -35,10 +35,7 @@ See [Releases](https://github.com/Dargmuesli/batchrename/releases "Releases").
 ## Future Features
 - Customizable sorting pattern
 
-See [Issues](https://github.com/Dargmuesli/BatchRename/issues).
-
-## Contact
-Please use the contact information [on my website](http://jonas-thelemann.de/contact) for giving me - greatly appreciated! - feedback or for questions regarding this software.
+See [Issues](https://github.com/dargmuesli/batch-rename/issues).
 
 # Screenshots
 
