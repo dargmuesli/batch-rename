@@ -963,7 +963,7 @@ Public Class FrmMain
             Dim remoteVersion As Version
 
             ghClient = New GitHubClient(New ProductHeaderValue(System.Windows.Forms.Application.ProductName))
-            release = Await ghClient.Repository.Release.GetLatest("Dargmuesli", System.Windows.Forms.Application.ProductName)
+            release = Await ghClient.Repository.Release.GetLatest("dargmuesli", System.Windows.Forms.Application.ProductName)
 
             ' Connect "download" events to their sub
             AddHandler webClient.DownloadProgressChanged, AddressOf DownloadProgressCallback
