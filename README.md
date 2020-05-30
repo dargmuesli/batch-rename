@@ -2,6 +2,8 @@
 With this application you can rename and sort large amounts of photos and other files at once using a specific pattern.
 It is especially useful for photos with stored *EXIF data*. For example, you can move the file `Camera-Uploads\0024.jpg` to `2015\06\2015-06-25_12-34-02.jpg` automatically!
 
+See [Format Pattern](./docs/format-pattern.md) for details.
+
 ## Download
 See [Releases](https://github.com/dargmuesli/batch-rename/releases "Releases").
 
