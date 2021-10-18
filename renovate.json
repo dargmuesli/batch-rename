@@ -1,16 +1,5 @@
 {
-  "automerge": true,
-  "automergeType": "branch",
-  "docker": {
-    "major": {
-      "enabled": true
-    },
-    "pinDigests": true
-  },
   "extends": [
-    "config:base"
-  ],
-  "major": {
-    "automerge": false
-  }
+    "github>dargmuesli/renovate-config"
+  ]
 }
